@@ -1,0 +1,77 @@
+INFO 2020-04-20 09:01:44,633 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-20 09:05:49,259 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/settings/dev.py changed, reloading.
+INFO 2020-04-20 09:06:57,770 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-20 09:07:04,696 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-20 09:07:31,085 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-20 09:08:16,411 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-20 09:08:49,434 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-20 09:11:20,862 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-20 09:14:00,705 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-20 09:16:35,013 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-20 09:16:57,757 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-20 09:18:06,091 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-20 09:20:17,434 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-20 09:22:53,132 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-20 09:26:59,128 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/settings/dev.py changed, reloading.
+INFO 2020-04-20 09:26:59,369 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-20 09:27:38,574 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-20 09:29:11,383 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-20 09:35:03,639 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/models.py changed, reloading.
+INFO 2020-04-20 09:35:03,881 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-20 09:52:34,346 autoreload 597 Watching for file changes with StatReloader
+ERROR 2020-04-20 09:53:01,540 exception 77 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2020-04-20 09:53:01,575 log 228 Bad Request: /carts/simple/
+WARNING 2020-04-20 09:53:01,577 basehttp 154 "GET /carts/simple/ HTTP/1.1" 400 66969
+ERROR 2020-04-20 09:53:04,060 exception 77 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2020-04-20 09:53:04,086 log 228 Bad Request: /image_codes/3b423fbe-831a-4c45-b51c-b3407bb32478/
+WARNING 2020-04-20 09:53:04,087 basehttp 154 "GET /image_codes/3b423fbe-831a-4c45-b51c-b3407bb32478/ HTTP/1.1" 400 67248
+ERROR 2020-04-20 09:53:25,729 exception 77 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2020-04-20 09:53:25,756 log 228 Bad Request: /usernames/itcast/count/
+WARNING 2020-04-20 09:53:25,757 basehttp 154 "GET /usernames/itcast/count/ HTTP/1.1" 400 67079
+ERROR 2020-04-20 09:53:27,659 exception 77 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2020-04-20 09:53:27,691 log 228 Bad Request: /usernames/itcast/count/
+WARNING 2020-04-20 09:53:27,691 basehttp 154 "GET /usernames/itcast/count/ HTTP/1.1" 400 67079
+ERROR 2020-04-20 09:53:36,865 exception 77 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2020-04-20 09:53:36,894 log 228 Bad Request: /usernames/itcast/count/
+WARNING 2020-04-20 09:53:36,894 basehttp 154 "GET /usernames/itcast/count/ HTTP/1.1" 400 67079
+ERROR 2020-04-20 09:53:45,806 exception 77 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2020-04-20 09:53:45,844 log 228 Bad Request: /image_codes/a87a1de9-7511-4453-92ab-a7e8c58d3d80/
+WARNING 2020-04-20 09:53:45,845 basehttp 154 "GET /image_codes/a87a1de9-7511-4453-92ab-a7e8c58d3d80/ HTTP/1.1" 400 67278
+ERROR 2020-04-20 09:55:05,924 exception 77 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2020-04-20 09:55:05,953 log 228 Bad Request: /usernames/itcast/count/
+WARNING 2020-04-20 09:55:05,953 basehttp 154 "GET /usernames/itcast/count/ HTTP/1.1" 400 67109
+ERROR 2020-04-20 09:55:40,416 exception 77 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2020-04-20 09:55:40,449 log 228 Bad Request: /usernames/itcast/count/
+WARNING 2020-04-20 09:55:40,450 basehttp 154 "GET /usernames/itcast/count/ HTTP/1.1" 400 67109
+ERROR 2020-04-20 09:56:14,648 exception 77 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2020-04-20 09:56:14,671 log 228 Bad Request: /usernames/itcast/count/
+WARNING 2020-04-20 09:56:14,672 basehttp 154 "GET /usernames/itcast/count/ HTTP/1.1" 400 67109
+ERROR 2020-04-20 09:56:17,501 exception 77 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2020-04-20 09:56:17,539 log 228 Bad Request: /usernames/itcast/count/
+WARNING 2020-04-20 09:56:17,540 basehttp 154 "GET /usernames/itcast/count/ HTTP/1.1" 400 67109
+ERROR 2020-04-20 09:56:20,108 exception 77 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2020-04-20 09:56:20,143 log 228 Bad Request: /usernames/itcast/count/
+WARNING 2020-04-20 09:56:20,144 basehttp 154 "GET /usernames/itcast/count/ HTTP/1.1" 400 67109
+ERROR 2020-04-20 09:56:50,159 exception 77 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2020-04-20 09:56:50,193 log 228 Bad Request: /image_codes/a4e3b3fc-b7fd-4061-aa3b-239b4c32674e/
+WARNING 2020-04-20 09:56:50,193 basehttp 154 "GET /image_codes/a4e3b3fc-b7fd-4061-aa3b-239b4c32674e/ HTTP/1.1" 400 67278
+ERROR 2020-04-20 09:57:03,621 exception 77 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2020-04-20 09:57:03,645 log 228 Bad Request: /usernames/itcast/count/
+WARNING 2020-04-20 09:57:03,646 basehttp 154 "GET /usernames/itcast/count/ HTTP/1.1" 400 67109
+WARNING 2020-04-20 10:02:32,992 log 228 Not Found: /getcook/
+WARNING 2020-04-20 10:02:32,992 basehttp 154 "GET /getcook/ HTTP/1.1" 404 1973
+WARNING 2020-04-20 10:02:33,049 log 228 Not Found: /favicon.ico
+WARNING 2020-04-20 10:02:33,049 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 1982
+ERROR 2020-04-20 10:04:17,256 exception 77 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2020-04-20 10:04:17,290 log 228 Bad Request: /carts/simple/
+WARNING 2020-04-20 10:04:17,290 basehttp 154 "GET /carts/simple/ HTTP/1.1" 400 67128
+INFO 2020-04-20 10:08:01,829 autoreload 597 Watching for file changes with StatReloader
+ERROR 2020-04-20 10:08:19,528 exception 77 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2020-04-20 10:08:19,561 log 228 Bad Request: /carts/simple/
+WARNING 2020-04-20 10:08:19,563 basehttp 154 "GET /carts/simple/ HTTP/1.1" 400 67128
+ERROR 2020-04-20 10:08:21,526 exception 77 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2020-04-20 10:08:21,556 log 228 Bad Request: /image_codes/3dd6b013-985b-4efa-8c5b-824c33a62d92/
+WARNING 2020-04-20 10:08:21,558 basehttp 154 "GET /image_codes/3dd6b013-985b-4efa-8c5b-824c33a62d92/ HTTP/1.1" 400 67403
+ERROR 2020-04-20 10:08:31,547 exception 77 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2020-04-20 10:08:31,576 log 228 Bad Request: /usernames/sadsads/count/
+WARNING 2020-04-20 10:08:31,576 basehttp 154 "GET /usernames/sadsads/count/ HTTP/1.1" 400 67292
