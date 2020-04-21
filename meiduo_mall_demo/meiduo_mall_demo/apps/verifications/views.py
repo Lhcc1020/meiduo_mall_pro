@@ -8,10 +8,11 @@ import logging
 from meiduo_mall_demo.libs.captcha.captcha import captcha
 from django import http
 from meiduo_mall_demo.libs.yuntongxun.sms import CCP
+from celery_tasks.sms.tasks import ccp_send_sms_code
 
 
 class ImgCheckView(View):
-    '''图片验证码校验'''
+    '''返回图形验证码'''
 
     def get(self, request, uuid):
         '''生成图形验证码'''
@@ -68,13 +69,16 @@ class MobileCheck(View):
         # 比对验证码信息
         # 解码
         image_code_server = image_code_server.decode()
+        print('验证码是：%s' % image_code_server.lower())
         # 比对小写字母
         if image_code_server.lower() != image_code_client.lower():
+            print('输入验证码错误', image_code_client)
             return http.JsonResponse({'code': 400,
                                       'errmsg': '图形验证码错误'})
 
         # 随机生成六位短信验证码
         sms_code = '%06d' % random.randint(0, 999999)
+        print('验证码是：', sms_code)
         logger.info(sms_code)
 
         # 创建redis管道
@@ -95,7 +99,8 @@ class MobileCheck(View):
 
         # 发送手机验证码
         # 短信模板
-        CCP().send_template_sms(mobile, [sms_code, 5], 1)
+        # CCP().send_template_sms(mobile, [sms_code, 5], 1)
+        ccp_send_sms_code.delay(mobile, sms_code)
 
         # 返回响应结果
         return http.JsonResponse({'code': 0,

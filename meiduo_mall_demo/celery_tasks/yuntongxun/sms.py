@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 import sys
 sys.path.insert(0, '../../../')
-from meiduo_mall_demo.libs.yuntongxun.CCPRestSDK import REST
+from celery_tasks.yuntongxun.CCPRestSDK import REST
 
 # 说明：主账号，登陆云通讯网站后，可在"控制台-应用"中看到开发者主账号ACCOUNT SID
 _accountSid = '8aaf07087172a6ee01719aed360c159a'

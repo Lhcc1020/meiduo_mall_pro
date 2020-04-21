@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'users',
     # 添加 django-cors-headers 使其可以进行 cors 跨域
     'corsheaders',
+    # 注册图形验证码
+    'verifications.apps.VerificationsConfig',
 ]
 
 MIDDLEWARE = [
@@ -56,6 +58,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # 添加 django-cors-headers 使其可以进行 cors 跨域
     'corsheaders.middleware.CorsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'meiduo_mall_demo.urls'
@@ -147,7 +150,15 @@ CACHES = {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
     },
+    "verify_code": {  # 验证码信息: 存到 2 号库
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/2",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
 }
+
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "session"
 
