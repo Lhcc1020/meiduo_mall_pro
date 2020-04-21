@@ -32,7 +32,17 @@ class MobileCheck(View):
     '''短信验证码校验'''
 
     def get(self, request, mobile):
-        # 接受参数
+
+        # 创建连接redis对象
+        redis_conn = get_redis_connection('verify_code')
+        # 先查询是否有上次发送时存入的检测数据是否在redis中存在
+        send_flag= redis_conn.get('send_flag%s' % mobile)
+        # 如果存在，返回提示
+        if send_flag:
+            return http.JsonResponse({'cede': 400,
+                                      'errmsg': '短信申请过于频繁'})
+
+        #redis中没有，开始接受参数
         image_code_client = request.GET.get('image_code')
         uuid = request.GET.get('image_code_id')
 
@@ -41,8 +51,7 @@ class MobileCheck(View):
             return http.JsonResponse({'code': 400,
                                       'errmsg': '缺少参数'})
 
-        # 创建连接redis对象
-        redis_conn = get_redis_connection('verify_code')
+
 
         # 提取图形验证码
         image_code_server = redis_conn.get('pic_%s' % uuid)
@@ -68,10 +77,21 @@ class MobileCheck(View):
         sms_code = '%06d' % random.randint(0, 999999)
         logger.info(sms_code)
 
+        # 创建redis管道
+        pl = redis_conn.pipeline()
+
         # 保存生成的验证码，并设置有效期
-        redis_conn.setex('sms_%s' % mobile,
-                         300,
-                         sms_code)
+        # redis_conn.setex('sms_%s' % mobile, 300, sms_code)
+        # 用管道保存验证码
+        pl.setex('sms_%s' % mobile, 300, sms_code)
+
+        # 发送验证码前向redis存一个检测数据，设置时间
+        # redis_conn.setex('send_flag%s' % mobile, 60, 1)
+        # 用管道发送检测数据
+        pl.setex('send_flag%s' % mobile, 60, 1)
+
+        # 调用管道
+        pl.execute()
 
         # 发送手机验证码
         # 短信模板
