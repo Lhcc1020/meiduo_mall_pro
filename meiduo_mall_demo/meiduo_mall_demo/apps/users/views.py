@@ -141,5 +141,11 @@ class Login(View):
             # 保持登录，默认记录两周
             request.session.set_expiry(None)
 
+        # 定义相应对象
+        response = http.JsonResponse({'code': 0, 'errmsg': 'ok'})
+
+        # 设置cookie ，时限14天
+        response.set_cookie('username', user.username, max_age=3600 * 24 * 14)
+
         # 返回Json
-        return http.JsonResponse({'code': 0, 'errmsg': 'ok'})
+        return response
