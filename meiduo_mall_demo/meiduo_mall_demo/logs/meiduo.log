@@ -1267,3 +1267,230 @@ WARNING 2020-04-21 16:33:24,084 log 228 Forbidden (CSRF cookie not set.): /regis
 INFO 2020-04-21 16:33:24,117 basehttp 154 "GET /mobiles/13829218854/count/ HTTP/1.1" 200 39
 INFO 2020-04-21 16:33:24,124 basehttp 154 "GET /usernames/meiduo/count/ HTTP/1.1" 200 39
 WARNING 2020-04-21 16:33:24,130 basehttp 154 "POST /register/ HTTP/1.1" 403 2868
+INFO 2020-04-21 16:40:52,445 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-21 16:40:55,462 basehttp 154 "GET /image_codes/3155d238-aa9a-4b52-915d-3891b21ed15b/ HTTP/1.1" 200 2917
+INFO 2020-04-21 16:40:59,653 basehttp 154 "GET /mobiles/13829218854/count/ HTTP/1.1" 200 39
+INFO 2020-04-21 16:41:01,350 basehttp 154 "GET /sms_codes/13829218854/?image_code=2321&image_code_id=3155d238-aa9a-4b52-915d-3891b21ed15b HTTP/1.1" 200 69
+INFO 2020-04-21 16:41:01,356 basehttp 154 "GET /mobiles/13829218854/count/ HTTP/1.1" 200 39
+INFO 2020-04-21 16:42:11,722 basehttp 154 "GET /sms_codes/13829218854/?image_code=2321&image_code_id=3155d238-aa9a-4b52-915d-3891b21ed15b HTTP/1.1" 200 69
+INFO 2020-04-21 16:42:11,731 basehttp 154 "GET /mobiles/13829218854/count/ HTTP/1.1" 200 39
+WARNING 2020-04-22 04:46:11,190 log 228 Not Found: /carts/simple/
+WARNING 2020-04-22 04:46:11,192 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 2913
+INFO 2020-04-22 04:46:12,682 basehttp 154 "GET /image_codes/4f904ced-e8b3-408a-a9c6-7b7f224926e3/ HTTP/1.1" 200 2977
+INFO 2020-04-22 04:46:15,209 basehttp 154 "GET /mobiles/13829218854/count/ HTTP/1.1" 200 39
+INFO 2020-04-22 04:46:20,161 basehttp 154 "GET /sms_codes/13829218854/?image_code=wewq&image_code_id=4f904ced-e8b3-408a-a9c6-7b7f224926e3 HTTP/1.1" 200 69
+INFO 2020-04-22 04:46:20,173 basehttp 154 "GET /mobiles/13829218854/count/ HTTP/1.1" 200 39
+INFO 2020-04-22 04:46:46,428 basehttp 154 "GET /image_codes/61023d84-b9b2-4565-8578-599d8004b82c/ HTTP/1.1" 200 2944
+INFO 2020-04-22 04:46:59,852 basehttp 154 "GET /image_codes/8c8fca87-257b-41b2-81fa-58e581e85a6d/ HTTP/1.1" 200 3522
+INFO 2020-04-22 04:47:01,852 basehttp 154 "GET /mobiles/13829218854/count/ HTTP/1.1" 200 39
+INFO 2020-04-22 04:47:08,012 views 82 991452
+INFO 2020-04-22 04:47:08,026 basehttp 154 "GET /mobiles/13829218854/count/ HTTP/1.1" 200 39
+INFO 2020-04-22 04:47:08,155 basehttp 154 "GET /sms_codes/13829218854/?image_code=whbx&image_code_id=8c8fca87-257b-41b2-81fa-58e581e85a6d HTTP/1.1" 200 61
+INFO 2020-04-22 04:47:29,440 basehttp 154 "GET /mobiles/13829218854/count/ HTTP/1.1" 200 39
+INFO 2020-04-22 04:48:55,977 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-04-22 04:49:22,476 log 228 Not Found: /
+WARNING 2020-04-22 04:49:22,485 basehttp 154 "GET / HTTP/1.1" 404 2856
+WARNING 2020-04-22 04:49:22,729 log 228 Not Found: /favicon.ico
+WARNING 2020-04-22 04:49:22,732 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2907
+WARNING 2020-04-22 04:49:41,184 log 228 Not Found: /carts/simple/
+WARNING 2020-04-22 04:49:41,189 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 2913
+INFO 2020-04-22 04:49:44,135 basehttp 154 "GET /image_codes/14cbdf8b-966c-41f8-a42d-d931c3066312/ HTTP/1.1" 200 3620
+INFO 2020-04-22 04:49:47,448 basehttp 154 "GET /usernames/meiduo/count/ HTTP/1.1" 200 39
+INFO 2020-04-22 04:49:59,629 basehttp 154 "GET /mobiles/13829218854/count/ HTTP/1.1" 200 39
+INFO 2020-04-22 04:51:39,776 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-22 04:51:44,003 basehttp 154 "GET /mobiles/13829218854/count/ HTTP/1.1" 200 39
+INFO 2020-04-22 04:51:51,018 views 82 592651
+INFO 2020-04-22 04:51:51,036 basehttp 154 "GET /mobiles/13829218854/count/ HTTP/1.1" 200 39
+INFO 2020-04-22 04:51:51,039 basehttp 154 "GET /sms_codes/13829218854/?image_code=lyam&image_code_id=14cbdf8b-966c-41f8-a42d-d931c3066312 HTTP/1.1" 200 61
+INFO 2020-04-22 04:52:07,402 basehttp 154 "OPTIONS /register/ HTTP/1.1" 200 0
+INFO 2020-04-22 04:52:07,410 basehttp 154 "GET /mobiles/13829218854/count/ HTTP/1.1" 200 39
+INFO 2020-04-22 04:52:07,463 basehttp 154 "GET /usernames/meiduo/count/ HTTP/1.1" 200 39
+ERROR 2020-04-22 04:52:09,326 log 228 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py", line 43, in post
+    dic = json.loads(request.body.decode())
+AttributeError: module 'django_redis.serializers.json' has no attribute 'loads'
+ERROR 2020-04-22 04:52:09,354 basehttp 154 "POST /register/ HTTP/1.1" 500 82015
+INFO 2020-04-22 04:52:10,060 basehttp 154 "GET /mobiles/13829218854/count/ HTTP/1.1" 200 39
+INFO 2020-04-22 04:52:10,149 basehttp 154 "GET /usernames/meiduo/count/ HTTP/1.1" 200 39
+ERROR 2020-04-22 04:52:10,506 log 228 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py", line 43, in post
+    dic = json.loads(request.body.decode())
+AttributeError: module 'django_redis.serializers.json' has no attribute 'loads'
+ERROR 2020-04-22 04:52:10,516 basehttp 154 "POST /register/ HTTP/1.1" 500 82015
+INFO 2020-04-24 10:00:48,912 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/urls.py changed, reloading.
+INFO 2020-04-24 10:00:50,039 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:02:13,965 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/urls.py changed, reloading.
+INFO 2020-04-24 10:02:14,842 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:02:36,774 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:02:39,756 basehttp 154 "OPTIONS /register/ HTTP/1.1" 200 0
+INFO 2020-04-24 10:02:39,783 basehttp 154 "GET /usernames/meiduo/count/ HTTP/1.1" 200 39
+INFO 2020-04-24 10:02:39,785 basehttp 154 "GET /mobiles/13829218854/count/ HTTP/1.1" 200 39
+ERROR 2020-04-24 10:02:39,940 log 228 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py", line 43, in post
+    dic = json.loads(request.body.decode())
+AttributeError: module 'django_redis.serializers.json' has no attribute 'loads'
+ERROR 2020-04-24 10:02:39,943 basehttp 154 "POST /register/ HTTP/1.1" 500 81961
+INFO 2020-04-24 10:02:50,089 basehttp 154 "GET /image_codes/edd983c9-7d93-437b-af22-27714d698808/ HTTP/1.1" 200 2803
+INFO 2020-04-24 10:03:03,563 basehttp 154 "GET /sms_codes/13829218854/?image_code=yjd4&image_code_id=edd983c9-7d93-437b-af22-27714d698808 HTTP/1.1" 200 69
+INFO 2020-04-24 10:03:03,572 basehttp 154 "GET /mobiles/13829218854/count/ HTTP/1.1" 200 39
+INFO 2020-04-24 10:03:09,856 basehttp 154 "GET /image_codes/31c6bcef-3f36-4911-b8a9-c7f421b5e8ca/ HTTP/1.1" 200 3229
+INFO 2020-04-24 10:03:44,280 basehttp 154 "GET /image_codes/9b6bac5a-458f-47a9-8bc3-78ef33eb39d9/ HTTP/1.1" 200 3415
+INFO 2020-04-24 10:03:47,658 basehttp 154 "GET /usernames/meiduo/count/ HTTP/1.1" 200 39
+INFO 2020-04-24 10:03:56,560 basehttp 154 "GET /mobiles/13829218854/count/ HTTP/1.1" 200 39
+INFO 2020-04-24 10:04:01,426 views 82 960524
+INFO 2020-04-24 10:04:01,428 basehttp 154 "GET /sms_codes/13829218854/?image_code=whco&image_code_id=9b6bac5a-458f-47a9-8bc3-78ef33eb39d9 HTTP/1.1" 200 61
+INFO 2020-04-24 10:04:01,441 basehttp 154 "GET /mobiles/13829218854/count/ HTTP/1.1" 200 39
+INFO 2020-04-24 10:04:16,031 basehttp 154 "GET /usernames/meiduo/count/ HTTP/1.1" 200 39
+INFO 2020-04-24 10:04:16,045 basehttp 154 "GET /mobiles/13829218854/count/ HTTP/1.1" 200 39
+ERROR 2020-04-24 10:04:16,170 log 228 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py", line 43, in post
+    dic = json.loads(request.body.decode())
+AttributeError: module 'django_redis.serializers.json' has no attribute 'loads'
+ERROR 2020-04-24 10:04:16,175 basehttp 154 "POST /register/ HTTP/1.1" 500 81991
+INFO 2020-04-24 10:05:39,477 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:05:40,236 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:05:54,633 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:05:55,313 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:06:43,468 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:06:48,444 basehttp 154 "GET /image_codes/5ee30910-6bbd-43b2-8f89-6f8cb5f89983/ HTTP/1.1" 200 3318
+INFO 2020-04-24 10:06:50,462 basehttp 154 "GET /image_codes/4c4931da-1afe-4ca4-a75c-2b6c760f4107/ HTTP/1.1" 200 3311
+INFO 2020-04-24 10:06:56,185 views 82 412769
+INFO 2020-04-24 10:06:56,197 basehttp 154 "GET /mobiles/13829218854/count/ HTTP/1.1" 200 39
+INFO 2020-04-24 10:06:56,199 basehttp 154 "GET /sms_codes/13829218854/?image_code=nbsw&image_code_id=4c4931da-1afe-4ca4-a75c-2b6c760f4107 HTTP/1.1" 200 61
+INFO 2020-04-24 10:07:10,607 basehttp 154 "GET /mobiles/13829218854/count/ HTTP/1.1" 200 39
+INFO 2020-04-24 10:07:10,610 basehttp 154 "GET /usernames/meiduo/count/ HTTP/1.1" 200 39
+INFO 2020-04-24 10:07:10,765 basehttp 154 "POST /register/ HTTP/1.1" 200 27
+WARNING 2020-04-24 10:07:11,164 log 228 Not Found: /carts/simple/
+WARNING 2020-04-24 10:07:11,165 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 2912
+INFO 2020-04-24 10:11:46,803 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:11:47,765 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:12:23,237 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:12:24,010 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:12:54,181 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/urls.py changed, reloading.
+INFO 2020-04-24 10:12:54,868 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:13:20,268 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:13:20,945 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:13:45,287 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:13:45,984 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:14:33,408 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:14:34,090 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:14:37,373 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:14:38,066 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:14:59,200 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:14:59,876 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:15:30,031 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:15:30,706 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:15:37,161 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:15:37,847 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:15:41,523 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:15:42,198 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:15:54,248 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:15:54,949 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:16:10,354 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:16:11,107 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:16:35,965 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:16:36,624 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:16:45,616 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:16:46,282 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:16:58,499 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:16:59,369 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:17:57,061 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:17:57,865 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:18:25,483 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:18:26,213 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:19:15,539 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:19:16,229 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:19:36,782 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:19:37,447 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:19:50,531 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:19:51,249 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:20:01,252 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:20:01,944 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:20:08,753 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:20:09,478 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:20:39,620 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:20:40,310 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:21:34,428 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:21:35,124 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:21:54,613 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:21:55,272 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:22:13,297 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:22:13,971 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:22:28,936 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:22:29,590 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:22:36,418 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:22:37,119 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:23:45,233 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:23:45,940 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:24:08,601 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:24:09,287 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:24:17,901 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:24:18,614 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:24:24,404 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:24:25,135 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:24:27,692 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:24:28,376 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:24:32,159 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:24:32,824 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:24:36,441 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:24:37,130 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:24:45,072 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:24:45,740 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:24:49,378 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:24:50,046 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:25:56,844 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:25:57,545 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:26:49,862 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:26:50,710 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:27:29,324 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-24 10:27:30,179 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:27:57,940 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 10:28:06,163 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-04-24 10:28:06,288 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2020-04-24 10:28:06,586 log 228 Not Found: /carts/simple/
+WARNING 2020-04-24 10:28:06,588 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3067
+INFO 2020-04-24 10:28:22,989 basehttp 154 "POST /login/ HTTP/1.1" 200 81

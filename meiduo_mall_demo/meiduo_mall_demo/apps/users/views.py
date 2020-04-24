@@ -3,13 +3,15 @@ from django.shortcuts import render
 from django import http
 from django.views import View
 from django_redis import get_redis_connection
-from django_redis.serializers import json
+import json
 from users.models import User
 import re
-from django.contrib.auth import login
+from django.contrib.auth import login, authenticate
+
 
 class UsernameCountView(View):
     '''判断用户名是否已经使用'''
+
     def get(self, request, username):
         '''判断是否重复'''
         try:
@@ -22,9 +24,11 @@ class UsernameCountView(View):
                              'errmsg': 'ok',
                              'count': count})
 
+
 class UsermobilPhone(View):
     '''手机号判断'''
-    def get(self,request, mobile):
+
+    def get(self, request, mobile):
         '''检验手机号是否重复'''
         try:
             # 判断手机号个数
@@ -36,8 +40,10 @@ class UsermobilPhone(View):
                              'errmsg': 'ok',
                              'count': count})
 
-class RegeistView(View):
+
+class Regeist(View):
     '''用户注册，保存信息'''
+
     def post(self, request):
         '''接收用户信息参数'''
         dic = json.loads(request.body.decode())
@@ -101,5 +107,39 @@ class RegeistView(View):
         return http.JsonResponse({'code': 0, 'errmsg': 'ok'})
 
 
+class Login(View):
+    """登录函数"""
 
+    def post(self, request):
+        '''实现用户名登录'''
 
+        # 接受参数
+        dir = json.loads(request.body.decode())
+        username = dir.get('username')
+        password = dir.get('password')
+        remembered = dir.get('remembered')
+
+        # 总体检验
+        if not all([username, password]):
+            return http.JsonResponse({'code': 400, 'errmsg': '关键参数错误'})
+
+        # 校验用户名和密码
+        user = authenticate(username=username, password=password)
+
+        # 判断检验结果
+        if user is None:
+            return http.JsonResponse({'code': 400, 'errmsg': '用户名或者密码错误'})
+
+        # 状态保持
+        login(request, user)
+
+        # 判断是否记住状态
+        if remembered != True:
+            # 浏览器关闭退出登录
+            request.session.set_expiry(0)
+        else:
+            # 保持登录，默认记录两周
+            request.session.set_expiry(None)
+
+        # 返回Json
+        return http.JsonResponse({'code': 0, 'errmsg': 'ok'})

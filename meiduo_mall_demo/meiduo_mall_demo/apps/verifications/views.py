@@ -100,7 +100,7 @@ class MobileCheck(View):
         # 发送手机验证码
         # 短信模板
         # CCP().send_template_sms(mobile, [sms_code, 5], 1)
-        ccp_send_sms_code.delay(mobile, sms_code)
+        # ccp_send_sms_code.delay(mobile, sms_code)
 
         # 返回响应结果
         return http.JsonResponse({'code': 0,
