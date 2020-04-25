@@ -1589,3 +1589,107 @@ WARNING 2020-04-24 12:20:41,733 log 228 Not Found: /carts/simple/
 WARNING 2020-04-24 12:20:41,739 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3067
 WARNING 2020-04-24 12:20:58,546 log 228 Not Found: /carts/simple/
 WARNING 2020-04-24 12:20:58,548 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3067
+INFO 2020-04-25 14:58:38,385 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-25 14:58:46,628 basehttp 154 "OPTIONS /logout/ HTTP/1.1" 200 0
+INFO 2020-04-25 14:58:46,694 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 27
+ERROR 2020-04-25 14:58:49,181 log 228 Internal Server Error: /qq/authorization/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/oauth/views.py", line 26, in get
+    ouath = OAuthQQ(client_id=settings.QQ_CLINET_ID,
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/conf/__init__.py", line 80, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'QQ_CLINET_ID'
+ERROR 2020-04-25 14:58:49,184 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 500 86837
+ERROR 2020-04-25 14:58:51,006 log 228 Internal Server Error: /qq/authorization/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/oauth/views.py", line 26, in get
+    ouath = OAuthQQ(client_id=settings.QQ_CLINET_ID,
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/conf/__init__.py", line 80, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'QQ_CLINET_ID'
+ERROR 2020-04-25 14:58:51,007 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 500 86837
+ERROR 2020-04-25 14:58:53,795 log 228 Internal Server Error: /qq/authorization/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/oauth/views.py", line 26, in get
+    ouath = OAuthQQ(client_id=settings.QQ_CLINET_ID,
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/conf/__init__.py", line 80, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'QQ_CLINET_ID'
+ERROR 2020-04-25 14:58:53,796 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 500 86837
+INFO 2020-04-25 14:59:52,917 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/oauth/views.py changed, reloading.
+INFO 2020-04-25 14:59:53,923 autoreload 597 Watching for file changes with StatReloader
+ERROR 2020-04-25 15:01:05,267 log 228 Internal Server Error: /qq/authorization/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/oauth/views.py", line 26, in get
+    oauth = OAuthQQ(client_id=settings.QQ_CLINET_ID,
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/conf/__init__.py", line 80, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'QQ_CLINET_ID'
+ERROR 2020-04-25 15:01:05,271 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 500 86837
+INFO 2020-04-25 15:03:16,826 autoreload 597 Watching for file changes with StatReloader
+ERROR 2020-04-25 15:03:22,932 log 228 Internal Server Error: /qq/authorization/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/oauth/views.py", line 26, in get
+    oauth = OAuthQQ(client_id=settings.QQ_CLINET_ID,
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/conf/__init__.py", line 80, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'QQ_CLINET_ID'
+ERROR 2020-04-25 15:03:22,937 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 500 86837
+INFO 2020-04-25 15:04:05,384 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-25 15:04:08,499 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 204
+INFO 2020-04-25 15:05:34,868 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 204
+INFO 2020-04-25 15:06:36,091 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-25 15:06:39,548 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 203
+INFO 2020-04-25 15:13:28,995 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-25 15:13:31,495 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 203
+INFO 2020-04-25 15:13:48,967 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 203

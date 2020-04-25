@@ -1,12 +1,14 @@
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render
 from django import http
 from django.views import View
 from django_redis import get_redis_connection
 import json
+
+from meiduo_mall_demo.utils.view import LoginRequird
 from users.models import User
 import re
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate, logout
 
 
 class UsernameCountView(View):
@@ -149,3 +151,27 @@ class Login(View):
 
         # 返回Json
         return response
+
+
+class LogOut(View):
+    '''创建一个登出接口'''
+    def delete(self, request):
+
+        # 使用logout登出
+        logout(request)
+
+        # 创建返回对象
+        response = http.JsonResponse({'code': 0, 'errmsg': 'ok'})
+
+        # 清除cookie
+        response.delete_cookie('username')
+
+        # 返回响应
+        return response
+
+
+class UserInfo(LoginRequird, View):
+
+    def get(self, request):
+        '''只有登录用户才能进入该类视图'''
+        return HttpResponse('UserInfo')

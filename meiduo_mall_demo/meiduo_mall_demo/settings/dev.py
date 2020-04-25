@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'corsheaders',
     # 注册图形验证码
     'verifications.apps.VerificationsConfig',
+    # QQ登录借口
+    'oauth.apps.OauthConfig',
 ]
 
 MIDDLEWARE = [
@@ -218,3 +220,11 @@ CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
 
 # 指定自定义用户认证后端
 AUTHENTICATION_BACKENDS = ['users.utils.UsernameCheck']
+
+# QQ登录参数
+# 我们申请的 客户端id
+QQ_CLIENT_ID = '101474184'
+# 我们申请的 客户端秘钥
+QQ_CLIENT_SECRET = 'c6ce949e04e12ecc909ae6a8b09b637c'
+# 我们申请时添加的: 登录成功后回调的路径
+QQ_REDIRECT_URI = 'http://www.meiduo.site:8080/oauth_callback.html'
