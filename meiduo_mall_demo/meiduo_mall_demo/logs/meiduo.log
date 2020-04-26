@@ -1693,3 +1693,18 @@ INFO 2020-04-25 15:06:39,548 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.
 INFO 2020-04-25 15:13:28,995 autoreload 597 Watching for file changes with StatReloader
 INFO 2020-04-25 15:13:31,495 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 203
 INFO 2020-04-25 15:13:48,967 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 203
+INFO 2020-04-26 08:47:31,468 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 08:48:04,734 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/oauth/views.py changed, reloading.
+INFO 2020-04-26 08:48:07,580 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 08:48:14,262 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 203
+INFO 2020-04-26 08:48:39,209 basehttp 154 "GET /oauth_callback/?code=C9DD927BB423833CE4CBE7E0D68DEFC1 HTTP/1.1" 200 263
+INFO 2020-04-26 08:48:39,753 basehttp 154 "GET /image_codes/5cf9d82e-bbe4-4218-ae8e-2a5236710181/ HTTP/1.1" 200 3128
+INFO 2020-04-26 08:48:57,323 views 82 150901
+INFO 2020-04-26 08:48:57,330 basehttp 154 "GET /sms_codes/13822222222/?image_code=ey4q&image_code_id=5cf9d82e-bbe4-4218-ae8e-2a5236710181 HTTP/1.1" 200 61
+INFO 2020-04-26 08:49:13,641 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2020-04-26 08:49:14,226 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 27
+WARNING 2020-04-26 08:49:15,917 log 228 Not Found: /carts/simple/
+WARNING 2020-04-26 08:49:15,925 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3707
+WARNING 2020-04-26 08:49:19,796 log 228 Not Found: /browse_histories/
+WARNING 2020-04-26 08:49:19,822 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3719
+INFO 2020-04-26 08:49:19,865 basehttp 154 "GET /info/ HTTP/1.1" 200 8

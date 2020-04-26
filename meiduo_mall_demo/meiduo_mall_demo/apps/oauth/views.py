@@ -1,3 +1,6 @@
+import json
+import re
+
 from django.shortcuts import render
 from QQLoginTool.QQtool import OAuthQQ
 from django.conf import settings
@@ -5,10 +8,11 @@ from django import http
 from django.views import View
 import logging
 from django.contrib.auth import login
+from django_redis import get_redis_connection
 
 from oauth.models import OAuthQQuser
-from oauth.utils import generate_access_token
-
+from oauth.utils import generate_access_token, check_access_token
+from users.models import User
 
 logger = logging.getLogger('django')
 
@@ -95,3 +99,91 @@ class QQUserlogreturn(View):
 
             # 返回响应
             return response
+
+
+    def post(self, request):
+        '''openid绑定用户信息'''
+
+        # 接受参数
+        dict = json.loads(request.body.decode())
+        mobile = dict.get('mobile')
+        password = dict.get('password')
+        sms_code_client = dict.get('sms_code')
+        access_token = dict.get('access_token')
+
+        # 校验参数
+        if not all([mobile, password, sms_code_client, access_token]):
+            return http.JsonResponse({'code': 400, 'errmsg': '参数有误'})
+
+        # 手机号校验
+        if not re.match(r'^1[3-9]\d{9}$', mobile):
+            return http.JsonResponse({'code': 400, 'errmsg': '请输入正确手机号-'})
+
+        # 密码校验
+        if not re.match(r'^[0-9A-Za-z]{8,20}$', password):
+            return http.JsonResponse({'code': 400,
+                                      'errmsg': '请按要求正确输入密码'})
+
+        # 短信验证码比对
+           # 创建redis对象
+        redis_conn = get_redis_connection('verify_code')
+
+        # 从redis获取验证码
+        sms_code_sever = redis_conn.get('sms_%s' % mobile)
+
+        # 判断验证码是否失效
+        if sms_code_sever == None:
+            return http.JsonResponse({'code': 400,
+                                      'errmsg': '短信验证码失效'})
+
+        # 判断验证码是否正确
+        if sms_code_client != sms_code_client:
+            return http.JsonResponse({'code': 400,
+                                      'errmsg': '短信验证码错误'})
+
+        # 判断access_token
+        # 调用自定义的函数
+        openid = check_access_token(access_token)
+
+        if not openid:
+            return http.JsonResponse({'code': 400,
+                                      'errmsg': 'openid缺失'})
+
+        # 保存用户注册信息
+        try:
+            # 通过手机号先读取用户信息
+            user = User.objects.get(mobile=mobile)
+
+        except Exception as e:
+            # 读不到用户，创建新用户保存
+            user = User.objects.create_user(username=mobile,
+                                            mobile=mobile,
+                                            password=password)
+        else:
+            # 用户存在验证用户密码
+            if not user.check_password(password):
+                return http.JsonResponse({'code': 400,
+                                      'errmsg': '用户密码错误'})
+
+        # 将openid绑定到用户信息
+        try:
+            OAuthQQuser.objects.create(openid=openid, user=user)
+
+        except Exception as e:
+            return http.JsonResponse({'code': 400,
+                                      'errmsg': '数据库添加错误'})
+
+        # 登录保持
+        login(request, user)
+
+        # 创建响应对象
+        response = http.JsonResponse({'code': 0,
+                                      'errmsg': 'ok'})
+
+        # 将用户信息写入到 cookie 中，有效期14天
+        response.set_cookie('username',
+                            user.username,
+                            max_age=3600 * 24 * 14)
+
+        # 返回响应
+        return response
