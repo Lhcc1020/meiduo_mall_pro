@@ -174,4 +174,14 @@ class UserInfo(LoginRequird, View):
 
     def get(self, request):
         '''只有登录用户才能进入该类视图'''
-        return HttpResponse('UserInfo')
+
+        info_data = {
+            'username': request.user.username,
+            "mobile": request.user.mobile,
+            "email": request.user.email,
+            "email_active": request.user.email_active
+        }
+
+        return http.JsonResponse({'code': 0,
+                                  'errmsg': 'ok',
+                                  'info_data': info_data})

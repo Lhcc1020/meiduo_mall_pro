@@ -17,6 +17,10 @@ class User(AbstractUser):
         unique=True,
         verbose_name='手机号')
 
+
+    email_active = models.BooleanField(default=False,
+                                       verbose_name='邮箱验证状态')
+
     # 对当前表进行相关设置:
     class Meta:
         # 设置表名
@@ -28,3 +32,6 @@ class User(AbstractUser):
     # 在 str 魔法方法中, 返回用户名称
     def __str__(self):
         return self.username
+
+
+
