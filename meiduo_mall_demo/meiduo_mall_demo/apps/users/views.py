@@ -9,6 +9,8 @@ from meiduo_mall_demo.utils.view import LoginRequird
 from users.models import User
 import re
 from django.contrib.auth import login, authenticate, logout
+import logging
+logger = logging.getLogger('django')
 
 
 class UsernameCountView(View):
@@ -171,7 +173,7 @@ class LogOut(View):
 
 
 class UserInfo(LoginRequird, View):
-
+    # 用户中心
     def get(self, request):
         '''只有登录用户才能进入该类视图'''
 
@@ -185,3 +187,30 @@ class UserInfo(LoginRequird, View):
         return http.JsonResponse({'code': 0,
                                   'errmsg': 'ok',
                                   'info_data': info_data})
+
+
+class AddEmail(View):
+    '''添加邮箱信息'''
+
+    def put(self, request):
+        # 接受参数
+        json_dict = json.loads(request.body.decode())
+        email = json_dict.get('email')
+
+        # 校验参数
+        if not email:
+            return http.JsonResponse({'code': 400, 'errmsg': '缺少邮箱参数'})
+
+        if not re.match(r'^[a-z0-9][\w\.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$', email):
+            return http.JsonResponse({'code': 400,
+                                      'errmsg': '邮箱参数有误'})
+        # 添加邮箱信息到数据库
+        try:
+            request.user.email = email
+            request.user.save()
+        except Exception as e:
+            logger.error(e)
+            return http.JsonResponse({'code': 400,
+                                      'errmsg': '保存邮箱到数据库出错'})
+        return http.JsonResponse({'code': 0,
+                                  'errmsg': 'ok'})

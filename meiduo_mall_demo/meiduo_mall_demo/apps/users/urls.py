@@ -9,4 +9,5 @@ urlpatterns = [
     re_path('^login/$',views.Login.as_view()),
     re_path(r'^logout/$', views.LogOut.as_view()),
     re_path(r'^info/$', views.UserInfo.as_view()),
+    re_path(r'^emails/$', views.AddEmail.as_view()),
 ]

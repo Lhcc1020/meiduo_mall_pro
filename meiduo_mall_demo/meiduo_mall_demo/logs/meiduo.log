@@ -1771,3 +1771,65 @@ INFO 2020-04-26 09:19:22,848 autoreload 597 Watching for file changes with StatR
 WARNING 2020-04-26 09:19:27,127 log 228 Not Found: /browse_histories/
 WARNING 2020-04-26 09:19:27,160 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3719
 INFO 2020-04-26 09:19:27,232 basehttp 154 "GET /info/ HTTP/1.1" 200 130
+INFO 2020-04-26 09:35:03,108 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:35:06,109 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:35:34,611 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:35:36,882 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:35:49,468 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:35:51,782 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:36:00,662 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:36:02,981 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:36:19,286 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:36:21,736 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:36:27,209 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:36:29,824 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:36:33,308 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:36:36,075 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:36:40,798 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:36:43,049 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:36:49,010 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:36:51,712 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:36:57,357 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:36:59,788 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:37:07,634 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:37:10,536 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:37:21,054 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:37:22,979 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:37:33,648 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:37:36,574 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:37:44,525 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:37:46,739 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:37:51,992 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:37:54,947 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:38:13,539 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:38:15,620 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:38:32,160 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:38:34,188 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:38:38,357 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:38:40,284 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:39:03,093 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:39:05,701 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:39:23,105 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:39:25,456 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:39:54,515 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:39:57,022 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:40:03,987 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:40:06,666 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:40:27,540 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:40:29,548 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:41:08,034 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:41:10,196 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:41:17,903 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:41:20,610 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:41:40,798 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:41:43,120 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:42:18,837 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:42:21,283 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:42:32,458 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:42:34,744 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:42:55,266 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:42:57,664 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:43:05,280 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py changed, reloading.
+INFO 2020-04-26 09:43:07,809 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:43:24,946 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/urls.py changed, reloading.
+INFO 2020-04-26 09:43:27,479 autoreload 597 Watching for file changes with StatReloader
