@@ -222,3 +222,36 @@ class AddEmail(View):
 
         return http.JsonResponse({'code': 0,
                                   'errmsg': 'ok'})
+
+class UserEmailActive(View):
+    '''邮箱激活验证'''
+    def put(self, request):
+
+        # 接受参数
+        token = request.GET.get('token')
+
+        # 检验参数
+        if not token:
+            return http.JsonResponse({'code': 400,
+                                      'errmsg': '缺少token'})
+
+        # token存在
+        # 调用函数，提取user信息
+        user = User.check_email(token)
+        if not user:
+            return http.JsonResponse({'code': 400,
+                                      'errmsg': 'token无效'})
+
+        try:
+            # user获取正常，修改email_active,保存
+            user.email_active = True
+            user.save()
+
+        except Exception as e:
+            logger.error(e)
+            return http.JsonResponse({'code': 400,
+                                      'errmsg': '邮箱激活失败'})
+
+            # 返回邮箱验证结果
+        return http.JsonResponse({'code': 0,
+                                  'errmsg': 'ok'})

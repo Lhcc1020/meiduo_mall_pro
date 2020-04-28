@@ -1861,3 +1861,109 @@ WARNING 2020-04-28 02:34:52,621 basehttp 154 "PUT /emails/verification/?token=ey
 WARNING 2020-04-28 02:35:34,326 log 228 Not Found: /browse_histories/
 WARNING 2020-04-28 02:35:34,334 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3875
 INFO 2020-04-28 02:35:34,336 basehttp 154 "GET /info/ HTTP/1.1" 200 146
+INFO 2020-04-28 11:38:47,918 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-04-28 11:39:06,138 log 228 Not Found: /carts/simple/
+WARNING 2020-04-28 11:39:06,149 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 4032
+WARNING 2020-04-28 11:39:08,237 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 11:39:08,259 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4044
+INFO 2020-04-28 11:39:08,355 basehttp 154 "GET /info/ HTTP/1.1" 200 146
+INFO 2020-04-28 11:39:09,885 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2020-04-28 11:39:10,647 basehttp 154 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2020-04-28 11:39:39,959 basehttp 154 "OPTIONS /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA3Mzk0OSwiZXhwIjoxNTg4MDc1NzQ5fQ.eyJ1c2VyIjoyLCJlbWFpbCI6ImxoY2MxMDIwQDE2My5jb20ifQ.WLCYR9uVObqnXBL90FMRXz1XT99lhxuqDZaqjwq8aPwCYxRrhsa6ChdDhD23VXhYX1RUgfNUpDjhhhq_t90mCQ HTTP/1.1" 200 0
+ERROR 2020-04-28 11:39:40,712 log 228 Internal Server Error: /emails/verification/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/views.py", line 231, in put
+    token = request.Get.get('token')
+AttributeError: 'WSGIRequest' object has no attribute 'Get'
+ERROR 2020-04-28 11:39:40,736 basehttp 154 "PUT /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA3Mzk0OSwiZXhwIjoxNTg4MDc1NzQ5fQ.eyJ1c2VyIjoyLCJlbWFpbCI6ImxoY2MxMDIwQDE2My5jb20ifQ.WLCYR9uVObqnXBL90FMRXz1XT99lhxuqDZaqjwq8aPwCYxRrhsa6ChdDhD23VXhYX1RUgfNUpDjhhhq_t90mCQ HTTP/1.1" 500 85430
+WARNING 2020-04-28 11:40:11,384 log 228 Not Found: /carts/simple/
+WARNING 2020-04-28 11:40:11,389 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 4032
+INFO 2020-04-28 11:40:37,320 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-28 11:40:40,623 basehttp 154 "OPTIONS /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA3Mzk0OSwiZXhwIjoxNTg4MDc1NzQ5fQ.eyJ1c2VyIjoyLCJlbWFpbCI6ImxoY2MxMDIwQDE2My5jb20ifQ.WLCYR9uVObqnXBL90FMRXz1XT99lhxuqDZaqjwq8aPwCYxRrhsa6ChdDhD23VXhYX1RUgfNUpDjhhhq_t90mCQ HTTP/1.1" 200 0
+INFO 2020-04-28 11:40:40,728 basehttp 154 "PUT /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA3Mzk0OSwiZXhwIjoxNTg4MDc1NzQ5fQ.eyJ1c2VyIjoyLCJlbWFpbCI6ImxoY2MxMDIwQDE2My5jb20ifQ.WLCYR9uVObqnXBL90FMRXz1XT99lhxuqDZaqjwq8aPwCYxRrhsa6ChdDhD23VXhYX1RUgfNUpDjhhhq_t90mCQ HTTP/1.1" 200 44
+WARNING 2020-04-28 11:40:49,572 log 228 Not Found: /carts/simple/
+WARNING 2020-04-28 11:40:49,578 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 4032
+INFO 2020-04-28 11:40:51,241 basehttp 154 "GET /info/ HTTP/1.1" 200 146
+WARNING 2020-04-28 11:40:51,244 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 11:40:51,258 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4044
+INFO 2020-04-28 11:40:56,436 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2020-04-28 11:40:56,919 basehttp 154 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2020-04-28 11:41:13,328 basehttp 154 "OPTIONS /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA3NDA1NiwiZXhwIjoxNTg4MDc1ODU2fQ.eyJ1c2VyIjoyLCJlbWFpbCI6ImxoY2MxMDIwQDE2My5jb20ifQ.jRRs0teAAdKd4KmTvTxP_SCODDQWJaWtW-lBkv5vE46dDo8IFvM15PrsooP1-cmZueLaUosLKZ5R0I-ZgkboDw HTTP/1.1" 200 0
+INFO 2020-04-28 11:41:13,481 basehttp 154 "PUT /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA3NDA1NiwiZXhwIjoxNTg4MDc1ODU2fQ.eyJ1c2VyIjoyLCJlbWFpbCI6ImxoY2MxMDIwQDE2My5jb20ifQ.jRRs0teAAdKd4KmTvTxP_SCODDQWJaWtW-lBkv5vE46dDo8IFvM15PrsooP1-cmZueLaUosLKZ5R0I-ZgkboDw HTTP/1.1" 200 44
+WARNING 2020-04-28 11:41:17,607 log 228 Not Found: /browse_histories/
+INFO 2020-04-28 11:41:17,610 basehttp 154 "GET /info/ HTTP/1.1" 200 146
+WARNING 2020-04-28 11:41:17,621 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4044
+WARNING 2020-04-28 11:41:20,485 log 228 Not Found: /browse_histories/
+INFO 2020-04-28 11:41:20,492 basehttp 154 "GET /info/ HTTP/1.1" 200 146
+WARNING 2020-04-28 11:41:20,504 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4044
+INFO 2020-04-28 11:41:21,372 basehttp 154 "GET /info/ HTTP/1.1" 200 146
+WARNING 2020-04-28 11:41:21,396 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 11:41:21,402 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4044
+INFO 2020-04-28 11:41:22,103 basehttp 154 "GET /info/ HTTP/1.1" 200 146
+WARNING 2020-04-28 11:41:22,126 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 11:41:22,133 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4044
+WARNING 2020-04-28 11:41:22,854 log 228 Not Found: /browse_histories/
+INFO 2020-04-28 11:41:22,867 basehttp 154 "GET /info/ HTTP/1.1" 200 146
+WARNING 2020-04-28 11:41:22,876 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4044
+WARNING 2020-04-28 11:41:23,713 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 11:41:23,719 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4044
+INFO 2020-04-28 11:41:23,725 basehttp 154 "GET /info/ HTTP/1.1" 200 146
+INFO 2020-04-28 11:41:24,510 basehttp 154 "GET /info/ HTTP/1.1" 200 146
+WARNING 2020-04-28 11:41:24,519 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 11:41:24,526 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4044
+WARNING 2020-04-28 11:41:25,109 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 11:41:25,114 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4044
+INFO 2020-04-28 11:41:25,119 basehttp 154 "GET /info/ HTTP/1.1" 200 146
+INFO 2020-04-28 11:41:27,318 basehttp 154 "GET /info/ HTTP/1.1" 200 146
+WARNING 2020-04-28 11:41:27,340 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 11:41:27,346 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4044
+INFO 2020-04-28 11:42:05,803 basehttp 154 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2020-04-28 11:42:16,039 basehttp 154 "OPTIONS /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA3NDEyNSwiZXhwIjoxNTg4MDc1OTI1fQ.eyJ1c2VyIjoyLCJlbWFpbCI6ImxoY2MxMDIwQDE2My5jb20ifQ.vJlySsn_ihkAE5MFNimxq0X7eO8OE80ON9fW50dItJg2ndq035RMXxHUH0wjnRfCRWLn6xOl8Pobp_KJHolEdw HTTP/1.1" 200 0
+INFO 2020-04-28 11:46:02,886 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/models.py changed, reloading.
+INFO 2020-04-28 11:46:05,939 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-28 11:46:18,736 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-28 11:46:27,721 basehttp 154 "OPTIONS /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA3NDEyNSwiZXhwIjoxNTg4MDc1OTI1fQ.eyJ1c2VyIjoyLCJlbWFpbCI6ImxoY2MxMDIwQDE2My5jb20ifQ.vJlySsn_ihkAE5MFNimxq0X7eO8OE80ON9fW50dItJg2ndq035RMXxHUH0wjnRfCRWLn6xOl8Pobp_KJHolEdw HTTP/1.1" 200 0
+WARNING 2020-04-28 11:48:24,140 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 11:48:24,202 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4044
+INFO 2020-04-28 11:48:24,212 basehttp 154 "GET /info/ HTTP/1.1" 200 146
+INFO 2020-04-28 11:48:26,280 basehttp 154 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2020-04-28 11:48:32,130 basehttp 154 "OPTIONS /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA3NDUwNSwiZXhwIjoxNTg4MDc2MzA1fQ.eyJ1c2VyX2lkIjoyLCJlbWFpbCI6ImxoY2MxMDIwQDE2My5jb20ifQ.SdbOMo5sLr-rD_JXj4yqnA4BUQlwCFq3c89Wyy3lX1FZAfldunU9ULpzKSTSa-X4ixGs-9SQPU6w0XJLw_KjDQ HTTP/1.1" 200 0
+WARNING 2020-04-28 11:48:35,107 log 228 Not Found: /carts/simple/
+WARNING 2020-04-28 11:48:35,118 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 4032
+INFO 2020-04-28 11:48:37,652 basehttp 154 "PUT /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA3NDEyNSwiZXhwIjoxNTg4MDc1OTI1fQ.eyJ1c2VyIjoyLCJlbWFpbCI6ImxoY2MxMDIwQDE2My5jb20ifQ.vJlySsn_ihkAE5MFNimxq0X7eO8OE80ON9fW50dItJg2ndq035RMXxHUH0wjnRfCRWLn6xOl8Pobp_KJHolEdw HTTP/1.1" 200 44
+INFO 2020-04-28 11:48:38,284 basehttp 154 "PUT /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA3NDUwNSwiZXhwIjoxNTg4MDc2MzA1fQ.eyJ1c2VyX2lkIjoyLCJlbWFpbCI6ImxoY2MxMDIwQDE2My5jb20ifQ.SdbOMo5sLr-rD_JXj4yqnA4BUQlwCFq3c89Wyy3lX1FZAfldunU9ULpzKSTSa-X4ixGs-9SQPU6w0XJLw_KjDQ HTTP/1.1" 200 27
+INFO 2020-04-28 11:48:47,676 basehttp 154 "GET /info/ HTTP/1.1" 200 146
+WARNING 2020-04-28 11:48:47,721 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 11:48:47,724 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4044
+WARNING 2020-04-28 11:48:53,188 log 228 Not Found: /browse_histories/
+INFO 2020-04-28 11:48:53,238 basehttp 154 "GET /info/ HTTP/1.1" 200 146
+WARNING 2020-04-28 11:48:53,244 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4044
+INFO 2020-04-28 11:48:54,276 basehttp 154 "GET /info/ HTTP/1.1" 200 146
+WARNING 2020-04-28 11:48:54,306 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 11:48:54,314 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4044
+INFO 2020-04-28 11:48:54,981 basehttp 154 "GET /info/ HTTP/1.1" 200 146
+WARNING 2020-04-28 11:48:55,013 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 11:48:55,020 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4044
+WARNING 2020-04-28 11:48:55,637 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 11:48:55,644 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4044
+INFO 2020-04-28 11:48:55,657 basehttp 154 "GET /info/ HTTP/1.1" 200 146
+INFO 2020-04-28 11:49:01,039 basehttp 154 "OPTIONS /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA3NDUwNSwiZXhwIjoxNTg4MDc2MzA1fQ.eyJ1c2VyX2lkIjoyLCJlbWFpbCI6ImxoY2MxMDIwQDE2My5jb20ifQ.SdbOMo5sLr-rD_JXj4yqnA4BUQlwCFq3c89Wyy3lX1FZAfldunU9ULpzKSTSa-X4ixGs-9SQPU6w0XJLw_KjDQ HTTP/1.1" 200 0
+INFO 2020-04-28 11:50:26,779 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-28 11:50:37,624 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-28 11:50:46,308 basehttp 154 "OPTIONS /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA3NDUwNSwiZXhwIjoxNTg4MDc2MzA1fQ.eyJ1c2VyX2lkIjoyLCJlbWFpbCI6ImxoY2MxMDIwQDE2My5jb20ifQ.SdbOMo5sLr-rD_JXj4yqnA4BUQlwCFq3c89Wyy3lX1FZAfldunU9ULpzKSTSa-X4ixGs-9SQPU6w0XJLw_KjDQ HTTP/1.1" 200 0
+INFO 2020-04-28 11:50:51,538 basehttp 154 "PUT /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA3NDUwNSwiZXhwIjoxNTg4MDc2MzA1fQ.eyJ1c2VyX2lkIjoyLCJlbWFpbCI6ImxoY2MxMDIwQDE2My5jb20ifQ.SdbOMo5sLr-rD_JXj4yqnA4BUQlwCFq3c89Wyy3lX1FZAfldunU9ULpzKSTSa-X4ixGs-9SQPU6w0XJLw_KjDQ HTTP/1.1" 200 27
+WARNING 2020-04-28 11:50:56,106 log 228 Not Found: /carts/simple/
+WARNING 2020-04-28 11:50:56,115 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 4032
+WARNING 2020-04-28 11:50:57,964 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 11:50:57,994 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4044
+INFO 2020-04-28 11:50:58,007 basehttp 154 "GET /info/ HTTP/1.1" 200 145
