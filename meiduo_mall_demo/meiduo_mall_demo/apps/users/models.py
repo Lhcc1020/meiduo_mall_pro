@@ -64,7 +64,7 @@ class User(AbstractUser):
 
         try:
             # 尝试获取数据库中对应用户信息
-            user = User.objects.get(id=user_id,email=user_email)
+            user = User.objects.get(id=user_id, email=user_email)
 
         except Exception as e:
             # 用户信息不存在

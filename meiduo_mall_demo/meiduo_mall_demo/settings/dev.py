@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'verifications.apps.VerificationsConfig',
     # QQ登录借口
     'oauth.apps.OauthConfig',
+    # 地址省市区
+    'areas',
 ]
 
 MIDDLEWARE = [
