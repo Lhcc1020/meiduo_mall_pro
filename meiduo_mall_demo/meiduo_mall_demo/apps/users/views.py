@@ -4,12 +4,13 @@ from django import http
 from django.views import View
 from django_redis import get_redis_connection
 import json
-
+from celery_tasks.email.tasks import send_verify_email
 from meiduo_mall_demo.utils.view import LoginRequird
 from users.models import User
 import re
 from django.contrib.auth import login, authenticate, logout
 import logging
+
 logger = logging.getLogger('django')
 
 
@@ -212,5 +213,12 @@ class AddEmail(View):
             logger.error(e)
             return http.JsonResponse({'code': 400,
                                       'errmsg': '保存邮箱到数据库出错'})
+
+        # 发送验证邮件到当前用户邮箱
+        # 将验证链接生成
+        verify_url = request.user.make_token_value()
+        # 发送验证邮件
+        send_verify_email.delay(email, verify_url)
+
         return http.JsonResponse({'code': 0,
                                   'errmsg': 'ok'})

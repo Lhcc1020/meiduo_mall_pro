@@ -1833,3 +1833,31 @@ INFO 2020-04-26 09:43:05,280 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro
 INFO 2020-04-26 09:43:07,809 autoreload 597 Watching for file changes with StatReloader
 INFO 2020-04-26 09:43:24,946 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/users/urls.py changed, reloading.
 INFO 2020-04-26 09:43:27,479 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:46:23,014 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/settings/dev.py changed, reloading.
+INFO 2020-04-26 09:46:25,529 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:50:38,509 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/celery_tasks/main.py changed, reloading.
+INFO 2020-04-26 09:50:41,586 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:50:49,056 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/celery_tasks/main.py changed, reloading.
+INFO 2020-04-26 09:50:51,420 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 09:51:13,684 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/celery_tasks/main.py changed, reloading.
+INFO 2020-04-26 09:51:15,983 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-28 02:05:46,247 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/settings/dev.py changed, reloading.
+INFO 2020-04-28 02:05:48,486 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-28 02:32:07,080 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-28 02:32:42,033 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-28 02:32:54,955 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-28 02:33:11,296 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 203
+INFO 2020-04-28 02:33:30,656 basehttp 154 "GET /oauth_callback/?code=C6D3CBC580E40236CF150F6293BA955E HTTP/1.1" 200 27
+WARNING 2020-04-28 02:33:31,569 log 228 Not Found: /carts/simple/
+WARNING 2020-04-28 02:33:31,572 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3863
+WARNING 2020-04-28 02:33:33,930 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 02:33:33,943 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3875
+INFO 2020-04-28 02:33:33,948 basehttp 154 "GET /info/ HTTP/1.1" 200 130
+INFO 2020-04-28 02:33:38,563 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2020-04-28 02:33:38,779 basehttp 154 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2020-04-28 02:34:52,438 basehttp 154 "OPTIONS /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA0MTIxOCwiZXhwIjoxNTg4MDQzMDE4fQ.eyJ1c2VyIjoyLCJlbWFpbCI6ImxoY2MxMDIwQDE2My5jb20ifQ.7rx3PHfIkj9IKkBEfrUDB2KGGUkmjL3DOMKcCjSfiHk_pDEFfXHQvLfartgfsOUcC_pyIc5yUp_Z6OOz3a8ptg HTTP/1.1" 200 0
+WARNING 2020-04-28 02:34:52,619 log 228 Not Found: /emails/verification/
+WARNING 2020-04-28 02:34:52,621 basehttp 154 "PUT /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA0MTIxOCwiZXhwIjoxNTg4MDQzMDE4fQ.eyJ1c2VyIjoyLCJlbWFpbCI6ImxoY2MxMDIwQDE2My5jb20ifQ.7rx3PHfIkj9IKkBEfrUDB2KGGUkmjL3DOMKcCjSfiHk_pDEFfXHQvLfartgfsOUcC_pyIc5yUp_Z6OOz3a8ptg HTTP/1.1" 404 4095
+WARNING 2020-04-28 02:35:34,326 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 02:35:34,334 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3875
+INFO 2020-04-28 02:35:34,336 basehttp 154 "GET /info/ HTTP/1.1" 200 146

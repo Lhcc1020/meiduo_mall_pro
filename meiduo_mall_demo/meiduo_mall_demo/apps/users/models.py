@@ -1,6 +1,6 @@
 from django.db import models
-
-# Create your models here.
+from itsdangerous import TimedJSONWebSignatureSerializer
+from django.conf import settings
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
@@ -16,7 +16,6 @@ class User(AbstractUser):
         # 唯一
         unique=True,
         verbose_name='手机号')
-
 
     email_active = models.BooleanField(default=False,
                                        verbose_name='邮箱验证状态')
@@ -34,4 +33,12 @@ class User(AbstractUser):
         return self.username
 
 
+    def make_token_value(self):
+        obj = TimedJSONWebSignatureSerializer(settings.SECRET_KEY, expires_in=1800)
 
+        dirt = {'user': self.id,
+                'email': self.email}
+
+        token = obj.dumps(dirt).decode()
+
+        return settings.EMAIL_VERIFY_URL + token
