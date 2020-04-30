@@ -11,4 +11,10 @@ urlpatterns = [
     re_path(r'^info/$', views.UserInfo.as_view()),
     re_path(r'^emails/$', views.AddEmail.as_view()),
     re_path(r'^emails/verification/$', views.UserEmailActive.as_view()),
+    re_path(r'^addresses/create/$', views.Adderss_Add.as_view()),
+    re_path(r'^addresses/$', views.Address_View.as_view()),
+    re_path(r'^addresses/(?P<address_id>\d+)/$', views.ChangeAddress.as_view()),
+    re_path(r'^addresses/(?P<address_id>\d+)/default/$', views.DefaultAddress.as_view()),
+    re_path(r'^addresses/(?P<address_id>\d+)/title/$', views.SetAddressTitle.as_view()),
+    re_path(r'^password/$', views.ChangePassword.as_view()),
 ]
