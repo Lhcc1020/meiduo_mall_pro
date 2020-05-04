@@ -2345,3 +2345,21 @@ WARNING 2020-04-30 09:09:51,418 basehttp 154 "GET /browse_histories/ HTTP/1.1" 4
 INFO 2020-04-30 09:09:51,433 basehttp 154 "GET /info/ HTTP/1.1" 200 145
 INFO 2020-04-30 09:09:52,820 basehttp 154 "GET /addresses/ HTTP/1.1" 200 333
 INFO 2020-04-30 09:09:52,822 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2020-04-30 09:12:10,081 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/settings/dev.py changed, reloading.
+INFO 2020-04-30 09:12:10,970 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-30 09:12:23,295 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/urls.py changed, reloading.
+INFO 2020-04-30 09:12:24,100 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-30 09:13:16,510 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/contents/models.py changed, reloading.
+INFO 2020-04-30 09:13:17,217 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-30 09:18:04,608 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/settings/dev.py changed, reloading.
+INFO 2020-04-30 09:18:05,402 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-30 09:18:19,806 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/urls.py changed, reloading.
+INFO 2020-04-30 09:18:20,530 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-30 09:18:58,364 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/goods/models.py changed, reloading.
+INFO 2020-04-30 09:18:59,110 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-30 09:19:30,738 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/goods/models.py changed, reloading.
+INFO 2020-04-30 09:19:31,415 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-04 10:19:07,106 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/settings/dev.py changed, reloading.
+INFO 2020-05-04 10:19:08,445 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-04 10:23:38,225 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/settings/dev.py changed, reloading.
+INFO 2020-05-04 10:23:38,963 autoreload 597 Watching for file changes with StatReloader
