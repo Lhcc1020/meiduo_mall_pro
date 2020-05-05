@@ -1,4 +1,3 @@
-exit
 DROP TABLE IF EXISTS `tb_content`;
 DROP TABLE IF EXISTS `tb_content_category`;
 DROP TABLE IF EXISTS `tb_sku_specification`;
