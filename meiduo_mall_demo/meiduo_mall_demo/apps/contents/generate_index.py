@@ -1,7 +1,13 @@
+import sys
+sys.path.insert(0, '../../../')
+
 from collections import OrderedDict
 from django.conf import settings
 from django.template import loader
 import os
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'meiduo_mall_demo.settings.dev')
+import django
+django.setup()
 import time
 from goods.models import GoodsChannel, GoodsCategory
 from contents.models import ContentCategory, Content
@@ -85,8 +91,13 @@ def generate_static_index_html():
     html_text = template.render(context)
 
     # 我们拼接新的 index.html 模板将要生成的所在地地址:
+
     file_path = os.path.join(settings.GENERATED_STATIC_HTML_FILES_DIR, 'index.html')
 
     # 以写的权限,将渲染过的模板重新生成, 写入到文件中.
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(html_text)
+
+
+if __name__ == '__main__':
+    generate_static_index_html()

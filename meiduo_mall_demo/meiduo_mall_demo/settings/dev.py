@@ -52,6 +52,10 @@ INSTALLED_APPS = [
     'areas',
     'contents',
     'goods',
+    # 定时任务
+    'django_crontab',
+    # 全文检索
+    'haystack'
 ]
 
 MIDDLEWARE = [
@@ -262,3 +266,34 @@ FDFS_URL = 'http://192.168.159.129:8888/'
 
 # 指定django系统使用的文件存储类:
 DEFAULT_FILE_STORAGE = 'meiduo_mall_demo.utils.fastdfs.fastdfs_storage.FastDFSStorage'
+
+# 生成的静态 html 文件保存目录
+# 先获取 BASE_DIR 的绝对路径: 即 内层 meiduo_mall 的绝对路径
+# 然后截取最后一级, 即,获取父类的绝对路径.
+# 再截取一级, 拿到项目文件的绝对路径, 然后拼接上 'front_end_pc'
+GENERATED_STATIC_HTML_FILES_DIR = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'front_end_pc')
+
+# 定时任务
+CRONJOBS = [
+    # 每1分钟生成一次首页静态文件
+    ('*/1 * * * *', 'contents.generate_index.generate_static_index_html', '>> ' + os.path.join(BASE_DIR, 'logs/crontab.log'))
+]
+
+# 解决 crontab 中文问题
+CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
+
+
+# Haystack
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
+        'URL': 'http://192.168.159.129:9200/', # Elasticsearch服务器ip地址，端口号固定为9200
+        'INDEX_NAME': 'meiduo_mall', # Elasticsearch建立的索引库的名称
+    },
+}
+
+# 当添加、修改、删除数据时，自动生成索引
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+
+# 用于决定每页显示数据条数:
+HAYSTACK_SEARCH_RESULTS_PER_PAGE = 5
