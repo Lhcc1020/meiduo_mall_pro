@@ -1,0 +1,27 @@
+[33m3c99dbe[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m HEAD@{0}: commit: 浏览记录完成
+[33m9717c4f[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{1}: commit: 商品详情页
+[33m6ec13cf[m HEAD@{2}: commit: 搜索完成
+[33m06c210c[m HEAD@{3}: commit: 首页显示完成
+[33m9c47e06[m HEAD@{4}: commit: 商品数据导入
+[33mcc71c8b[m HEAD@{5}: commit: 收货地址，修改密码完成
+[33m82bde19[m HEAD@{6}: commit: 省市区列表完成
+[33m7ffe76d[m HEAD@{7}: commit: 邮箱验证完成
+[33m49e7cb0[m HEAD@{8}: commit: 发送验证邮件完成
+[33mee638ab[m HEAD@{9}: commit: 邮箱添加接口完成
+[33m3098ab9[m HEAD@{10}: commit: 用户中心信息显示完成
+[33mf89d810[m HEAD@{11}: commit: QQ登录第三接口openid绑定用户信息完成
+[33mbb4708c[m HEAD@{12}: commit: Oauth文件补传
+[33md7cf806[m HEAD@{13}: commit: QQ第二接口完成，扫码页面正常读取
+[33m37bc0ca[m HEAD@{14}: commit: 首页登录显示用户名
+[33m797c2e9[m HEAD@{15}: commit: 手机号登录接口完成
+[33m619be01[m HEAD@{16}: commit: 用户名登录接口完成
+[33m58149f1[m HEAD@{17}: commit: 注册借口实现-未处理csrf报错
+[33m7e0aa61[m HEAD@{18}: commit: celery bug 优化
+[33m57bb536[m HEAD@{19}: commit: 验证码频繁发送优化，redis管道调用
+[33m14c0edf[m HEAD@{20}: commit: 验证码包
+[33m14def87[m HEAD@{21}: commit: 验证码接口完成
+[33mc5047e0[m HEAD@{22}: commit: 手机验证接口实现
+[33mc80a908[m HEAD@{23}: commit: 添加了注册用户名重复检测
+[33m6466d95[m HEAD@{24}: commit: 用户模块添加
+[33m6e3f48f[m HEAD@{25}: commit: 配置完成
+[33m62819d3[m HEAD@{26}: clone: from https://github.com/Lhcc1020/meiduo_mall_pro.git

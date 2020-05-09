@@ -3404,3 +3404,231 @@ INFO 2020-05-05 12:40:39,602 basehttp 154 "GET /list/115/skus/?page=1&page_size=
 WARNING 2020-05-05 12:40:39,634 log 228 Not Found: /carts/simple/
 INFO 2020-05-05 12:40:39,645 basehttp 154 "GET /hot/115/ HTTP/1.1" 200 582
 WARNING 2020-05-05 12:40:39,650 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5939
+INFO 2020-05-08 10:48:18,105 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-08 10:50:03,282 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/settings/dev.py changed, reloading.
+INFO 2020-05-08 10:50:04,133 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-08 10:50:24,806 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/urls.py changed, reloading.
+INFO 2020-05-08 10:50:25,558 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:17:18,085 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/urls.py changed, reloading.
+INFO 2020-05-09 11:17:18,922 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:17:53,513 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/views.py changed, reloading.
+INFO 2020-05-09 11:17:54,280 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:18:11,919 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/views.py changed, reloading.
+INFO 2020-05-09 11:18:12,702 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:18:21,804 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/views.py changed, reloading.
+INFO 2020-05-09 11:18:22,546 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:18:29,563 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/views.py changed, reloading.
+INFO 2020-05-09 11:18:30,286 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:19:10,976 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/views.py changed, reloading.
+INFO 2020-05-09 11:19:11,776 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:19:21,061 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/views.py changed, reloading.
+INFO 2020-05-09 11:19:21,881 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:20:06,830 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/views.py changed, reloading.
+INFO 2020-05-09 11:20:07,658 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:21:58,043 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/views.py changed, reloading.
+INFO 2020-05-09 11:21:59,129 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:22:25,099 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/views.py changed, reloading.
+INFO 2020-05-09 11:22:25,893 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:23:09,078 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/views.py changed, reloading.
+INFO 2020-05-09 11:23:10,030 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:24:29,914 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/views.py changed, reloading.
+INFO 2020-05-09 11:24:30,672 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:24:46,417 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/views.py changed, reloading.
+INFO 2020-05-09 11:24:47,205 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:24:52,304 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/views.py changed, reloading.
+INFO 2020-05-09 11:24:53,285 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:25:15,308 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/views.py changed, reloading.
+INFO 2020-05-09 11:25:16,050 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:25:27,255 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:25:31,174 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-09 11:25:31,353 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2020-05-09 11:25:32,023 log 228 Not Found: /carts/simple/
+WARNING 2020-05-09 11:25:32,025 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6040
+WARNING 2020-05-09 11:25:36,646 log 228 Not Found: /carts/
+WARNING 2020-05-09 11:25:36,647 basehttp 154 "GET /carts/ HTTP/1.1" 404 6019
+WARNING 2020-05-09 11:25:38,348 log 228 Not Found: /orders/settlement/
+WARNING 2020-05-09 11:25:38,349 basehttp 154 "GET /orders/settlement/ HTTP/1.1" 404 6055
+WARNING 2020-05-09 11:25:43,668 log 228 Not Found: /carts/simple/
+WARNING 2020-05-09 11:25:43,669 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6040
+WARNING 2020-05-09 11:25:45,521 log 228 Not Found: /carts/simple/
+WARNING 2020-05-09 11:25:45,533 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6040
+INFO 2020-05-09 11:25:45,536 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1561
+INFO 2020-05-09 11:25:45,544 basehttp 154 "GET /hot/115/ HTTP/1.1" 200 582
+WARNING 2020-05-09 11:26:54,266 log 228 Not Found: /browse_histories/
+WARNING 2020-05-09 11:26:54,268 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 6052
+INFO 2020-05-09 11:26:54,279 basehttp 154 "GET /info/ HTTP/1.1" 200 145
+INFO 2020-05-09 11:26:56,009 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2020-05-09 11:26:56,010 basehttp 154 "GET /addresses/ HTTP/1.1" 200 333
+WARNING 2020-05-09 11:26:57,405 log 228 Not Found: /browse_histories/
+INFO 2020-05-09 11:26:57,406 basehttp 154 "GET /info/ HTTP/1.1" 200 145
+WARNING 2020-05-09 11:26:57,408 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 6052
+WARNING 2020-05-09 11:27:00,856 log 228 Not Found: /browse_histories/
+WARNING 2020-05-09 11:27:00,865 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 6052
+INFO 2020-05-09 11:27:00,866 basehttp 154 "GET /info/ HTTP/1.1" 200 145
+WARNING 2020-05-09 11:27:03,399 log 228 Not Found: /carts/simple/
+WARNING 2020-05-09 11:27:03,400 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6040
+WARNING 2020-05-09 11:27:11,326 log 228 Not Found: /carts/simple/
+WARNING 2020-05-09 11:27:11,328 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6040
+INFO 2020-05-09 11:27:11,345 basehttp 154 "GET /hot/115/ HTTP/1.1" 200 582
+INFO 2020-05-09 11:27:11,374 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1561
+INFO 2020-05-09 11:28:53,537 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/settings/dev.py changed, reloading.
+INFO 2020-05-09 11:28:54,323 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:30:18,307 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/settings/dev.py changed, reloading.
+INFO 2020-05-09 11:36:24,279 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:36:38,158 basehttp 154 "OPTIONS /logout/ HTTP/1.1" 200 0
+INFO 2020-05-09 11:36:38,210 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 27
+INFO 2020-05-09 11:36:39,695 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-09 11:36:39,807 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2020-05-09 11:36:40,111 log 228 Not Found: /carts/simple/
+WARNING 2020-05-09 11:36:40,113 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6206
+WARNING 2020-05-09 11:36:43,182 log 228 Not Found: /carts/simple/
+WARNING 2020-05-09 11:36:43,185 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6206
+INFO 2020-05-09 11:36:43,223 basehttp 154 "GET /hot/115/ HTTP/1.1" 200 582
+INFO 2020-05-09 11:36:43,226 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1561
+WARNING 2020-05-09 11:37:49,674 log 228 Not Found: /carts/simple/
+WARNING 2020-05-09 11:37:49,675 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6206
+INFO 2020-05-09 11:37:52,200 basehttp 154 "GET /info/ HTTP/1.1" 200 63
+INFO 2020-05-09 11:37:52,216 basehttp 154 "GET /browse_histories/ HTTP/1.1" 200 39
+INFO 2020-05-09 11:37:53,709 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-09 11:37:53,845 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2020-05-09 11:37:54,056 log 228 Not Found: /carts/simple/
+WARNING 2020-05-09 11:37:54,057 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6206
+WARNING 2020-05-09 11:37:57,016 log 228 Not Found: /carts/simple/
+WARNING 2020-05-09 11:37:57,021 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6206
+INFO 2020-05-09 11:37:57,045 basehttp 154 "GET /hot/115/ HTTP/1.1" 200 582
+INFO 2020-05-09 11:37:57,057 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1561
+INFO 2020-05-09 11:38:49,595 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/goods/utils.py changed, reloading.
+INFO 2020-05-09 11:38:50,383 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:39:13,209 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/goods/utils.py changed, reloading.
+INFO 2020-05-09 11:39:13,904 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:41:16,211 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/celery_tasks/main.py changed, reloading.
+INFO 2020-05-09 11:41:17,091 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-09 11:46:15,274 log 228 Not Found: /carts/simple/
+INFO 2020-05-09 11:46:15,281 basehttp 154 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2020-05-09 11:46:15,293 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6206
+INFO 2020-05-09 11:46:15,357 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 27
+WARNING 2020-05-09 11:46:16,691 log 228 Not Found: /carts/simple/
+WARNING 2020-05-09 11:46:16,692 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6206
+INFO 2020-05-09 11:46:16,714 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 27
+WARNING 2020-05-09 11:46:17,275 log 228 Not Found: /carts/simple/
+WARNING 2020-05-09 11:46:17,287 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6206
+INFO 2020-05-09 11:46:17,296 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 27
+WARNING 2020-05-09 11:46:17,844 log 228 Not Found: /carts/simple/
+WARNING 2020-05-09 11:46:17,848 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6206
+INFO 2020-05-09 11:46:17,870 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 27
+INFO 2020-05-09 11:46:18,440 basehttp 154 "OPTIONS /carts/ HTTP/1.1" 200 0
+WARNING 2020-05-09 11:46:18,462 log 228 Not Found: /carts/
+WARNING 2020-05-09 11:46:18,463 basehttp 154 "POST /carts/ HTTP/1.1" 404 6186
+WARNING 2020-05-09 11:46:18,505 log 228 Not Found: /carts/
+WARNING 2020-05-09 11:46:18,506 basehttp 154 "POST /carts/ HTTP/1.1" 404 6186
+WARNING 2020-05-09 11:46:19,835 log 228 Not Found: /carts/
+WARNING 2020-05-09 11:46:19,836 basehttp 154 "POST /carts/ HTTP/1.1" 404 6186
+WARNING 2020-05-09 11:46:24,111 log 228 Not Found: /carts/
+WARNING 2020-05-09 11:46:24,112 basehttp 154 "GET /carts/ HTTP/1.1" 404 6185
+INFO 2020-05-09 11:46:56,361 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/urls.py changed, reloading.
+INFO 2020-05-09 11:46:57,282 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:47:09,585 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-09 11:47:14,794 log 228 Not Found: /carts/simple/
+WARNING 2020-05-09 11:47:14,797 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6260
+WARNING 2020-05-09 11:47:17,840 log 228 Not Found: /carts/simple/
+WARNING 2020-05-09 11:47:17,842 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6260
+INFO 2020-05-09 11:47:17,864 basehttp 154 "GET /hot/115/ HTTP/1.1" 200 582
+INFO 2020-05-09 11:47:17,887 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1561
+WARNING 2020-05-09 11:47:18,617 log 228 Not Found: /carts/simple/
+WARNING 2020-05-09 11:47:18,619 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6260
+INFO 2020-05-09 11:47:18,655 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 27
+WARNING 2020-05-09 11:47:19,844 log 228 Not Found: /carts/simple/
+WARNING 2020-05-09 11:47:19,855 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6260
+INFO 2020-05-09 11:47:19,864 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 27
+INFO 2020-05-09 11:47:21,929 basehttp 154 "POST /carts/ HTTP/1.1" 200 27
+ERROR 2020-05-09 11:47:26,177 log 228 Internal Server Error: /carts/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view carts.views.CartsView didn't return an HttpResponse object. It returned None instead.
+ERROR 2020-05-09 11:47:26,179 basehttp 154 "GET /carts/ HTTP/1.1" 500 67093
+ERROR 2020-05-09 11:47:28,724 log 228 Internal Server Error: /carts/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view carts.views.CartsView didn't return an HttpResponse object. It returned None instead.
+ERROR 2020-05-09 11:47:28,725 basehttp 154 "GET /carts/ HTTP/1.1" 500 67093
+ERROR 2020-05-09 11:47:29,431 log 228 Internal Server Error: /carts/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view carts.views.CartsView didn't return an HttpResponse object. It returned None instead.
+ERROR 2020-05-09 11:47:29,432 basehttp 154 "GET /carts/ HTTP/1.1" 500 67093
+INFO 2020-05-09 11:48:38,947 basehttp 154 "GET /info/ HTTP/1.1" 200 145
+INFO 2020-05-09 11:48:38,961 basehttp 154 "GET /browse_histories/ HTTP/1.1" 200 1412
+ERROR 2020-05-09 11:49:27,614 log 228 Internal Server Error: /carts/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view carts.views.CartsView didn't return an HttpResponse object. It returned None instead.
+ERROR 2020-05-09 11:49:27,628 basehttp 154 "GET /carts/ HTTP/1.1" 500 67093
+ERROR 2020-05-09 11:51:27,038 log 228 Internal Server Error: /carts/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view carts.views.CartsView didn't return an HttpResponse object. It returned None instead.
+ERROR 2020-05-09 11:51:27,054 basehttp 154 "GET /carts/ HTTP/1.1" 500 67093
+INFO 2020-05-09 11:53:35,038 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/views.py changed, reloading.
+INFO 2020-05-09 11:53:35,781 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:53:52,132 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 11:54:14,633 basehttp 154 "GET /carts/ HTTP/1.1" 200 377
+WARNING 2020-05-09 11:54:29,181 log 228 Not Found: /orders/settlement/
+WARNING 2020-05-09 11:54:29,185 basehttp 154 "GET /orders/settlement/ HTTP/1.1" 404 6275
+INFO 2020-05-09 11:55:15,163 basehttp 154 "DELETE /carts/ HTTP/1.1" 200 67
+INFO 2020-05-09 11:55:22,979 basehttp 154 "GET /carts/ HTTP/1.1" 200 44
+INFO 2020-05-09 11:55:32,446 basehttp 154 "DELETE /carts/ HTTP/1.1" 200 67
+INFO 2020-05-09 11:55:33,638 basehttp 154 "GET /carts/ HTTP/1.1" 200 44
+INFO 2020-05-09 12:01:22,897 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/views.py changed, reloading.
+INFO 2020-05-09 12:01:23,767 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 12:03:35,878 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/views.py changed, reloading.
+INFO 2020-05-09 12:03:36,679 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 12:03:46,883 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/views.py changed, reloading.
+INFO 2020-05-09 12:03:47,632 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 12:04:06,580 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/views.py changed, reloading.
+INFO 2020-05-09 12:04:07,317 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 12:05:34,026 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/urls.py changed, reloading.
+INFO 2020-05-09 12:05:34,888 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-09 12:05:37,071 log 228 Not Found: /carts/simple/
+WARNING 2020-05-09 12:05:37,073 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6425
+WARNING 2020-05-09 12:05:38,993 log 228 Not Found: /carts/simple/
+INFO 2020-05-09 12:05:39,004 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1561
+WARNING 2020-05-09 12:05:39,009 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6425
+INFO 2020-05-09 12:05:39,024 basehttp 154 "GET /hot/115/ HTTP/1.1" 200 582
+WARNING 2020-05-09 12:05:39,770 log 228 Not Found: /carts/simple/
+WARNING 2020-05-09 12:05:39,771 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6425
+INFO 2020-05-09 12:05:39,775 basehttp 154 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2020-05-09 12:05:39,831 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 27
+INFO 2020-05-09 12:05:40,615 basehttp 154 "OPTIONS /carts/ HTTP/1.1" 200 0
+INFO 2020-05-09 12:05:40,637 basehttp 154 "POST /carts/ HTTP/1.1" 200 27
+WARNING 2020-05-09 12:05:44,030 log 228 Not Found: /carts/simple/
+WARNING 2020-05-09 12:05:44,032 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6425
+INFO 2020-05-09 12:05:44,056 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 27
+INFO 2020-05-09 12:05:44,871 basehttp 154 "POST /carts/ HTTP/1.1" 200 27
+WARNING 2020-05-09 12:05:48,121 log 228 Not Found: /carts/simple/
+WARNING 2020-05-09 12:05:48,123 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6425
+INFO 2020-05-09 12:05:48,145 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 27
+INFO 2020-05-09 12:05:48,836 basehttp 154 "POST /carts/ HTTP/1.1" 200 27
+INFO 2020-05-09 12:05:59,380 basehttp 154 "GET /carts/ HTTP/1.1" 200 1042
+INFO 2020-05-09 12:06:07,060 basehttp 154 "OPTIONS /carts/selection/ HTTP/1.1" 200 0
+INFO 2020-05-09 12:06:07,070 basehttp 154 "PUT /carts/selection/ HTTP/1.1" 200 69
+INFO 2020-05-09 12:06:07,730 basehttp 154 "PUT /carts/selection/ HTTP/1.1" 200 69
+INFO 2020-05-09 12:06:08,431 basehttp 154 "PUT /carts/selection/ HTTP/1.1" 200 69
+INFO 2020-05-09 12:06:09,301 basehttp 154 "PUT /carts/ HTTP/1.1" 200 412
+INFO 2020-05-09 12:06:10,547 basehttp 154 "PUT /carts/ HTTP/1.1" 200 413
+INFO 2020-05-09 12:06:12,393 basehttp 154 "PUT /carts/ HTTP/1.1" 200 412
+INFO 2020-05-09 12:06:13,512 basehttp 154 "PUT /carts/selection/ HTTP/1.1" 200 69

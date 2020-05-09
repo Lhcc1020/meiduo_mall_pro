@@ -5,6 +5,7 @@ from django.views import View
 from django_redis import get_redis_connection
 import json
 from celery_tasks.email.tasks import send_verify_email
+from goods.models import SKU
 from meiduo_mall_demo.utils.view import LoginRequird
 from users.models import User, Address
 import re
@@ -389,10 +390,10 @@ class Address_View(View):
 
         default_id = request.user.default_address_id
 
-        return http.JsonResponse({'code': 0,
-                                  'errmsg': 'ok',
-                                  'addresses': address_dict_list,
-                                  'default_address_id': default_id})
+        return JsonResponse({'code': 0,
+                           'errmsg': 'ok',
+                           'addresses': address_dict_list,
+                           'default_address_id': default_id})
 
 
 class ChangeAddress(View):
@@ -414,21 +415,21 @@ class ChangeAddress(View):
 
         # 校验参数
         if not all([receiver, province_id, city_id, district_id, place, mobile]):
-            return http.JsonResponse({'code': 400,
-                                      'errmsg': '缺少参数'})
+            return JsonResponse({'code': 400,
+                                 'errmsg': '缺少参数'})
 
         if not re.match(r'^1[3-9]\d{9}$', mobile):
-            return http.JsonResponse({'code': 400,
-                                      'errmsg': 'mobile错误'})
+            return JsonResponse({'code': 400,
+                                 'errmsg': 'mobile错误'})
 
         if tel:
             if not re.match(r'^(0[0-9]{2,3}-)?([2-9][0-9]{6,7})+(-[0-9]{1,4})?$', tel):
-                return http.JsonResponse({'code': 400,
-                                          'errmsg': 'tel错误'})
+                return JsonResponse({'code': 400,
+                                     'errmsg': 'tel错误'})
         if email:
             if not re.match(r'^[a-z0-9][\w\.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$', email):
-                return http.JsonResponse({'code': 400,
-                                          'errmsg': 'email错误'})
+                return JsonResponse({'code': 400,
+                                     'errmsg': 'email错误'})
 
         # 判断地址是否存在,并更新地址信息
         try:
@@ -446,8 +447,8 @@ class ChangeAddress(View):
             )
         except Exception as e:
             logger.error(e)
-            return http.JsonResponse({'code': 400,
-                                      'errmsg': '更新地址失败'})
+            return JsonResponse({'code': 400,
+                                 'errmsg': '更新地址失败'})
 
         # 构造响应数据
         address = Address.objects.get(id=address_id)
@@ -480,12 +481,12 @@ class ChangeAddress(View):
             address.save()
         except Exception as e:
             logger.error(e)
-            return http.JsonResponse({'code': 400,
-                                      'errmsg': '删除地址失败'})
+            return JsonResponse({'code': 400,
+                                 'errmsg': '删除地址失败'})
 
         # 响应删除地址结果
-        return http.JsonResponse({'code': 0,
-                                  'errmsg': '删除地址成功'})
+        return JsonResponse({'code': 0,
+                             'errmsg': '删除地址成功'})
 
 
 class DefaultAddress(View):
@@ -502,12 +503,12 @@ class DefaultAddress(View):
             request.user.save()
         except Exception as e:
             logger.error(e)
-            return http.JsonResponse({'code': 400,
-                                      'errmsg': '设置默认地址失败'})
+            return JsonResponse({'code': 400,
+                                 'errmsg': '设置默认地址失败'})
 
         # 响应设置默认地址结果
-        return http.JsonResponse({'code': 0,
-                                  'errmsg': '设置默认地址成功'})
+        return JsonResponse({'code': 0,
+                             'errmsg': '设置默认地址成功'})
 
 
 class SetAddressTitle(View):
@@ -528,12 +529,12 @@ class SetAddressTitle(View):
             address.save()
         except Exception as e:
             logger.error(e)
-            return http.JsonResponse({'code': 400,
-                                      'errmsg': '设置地址标题失败'})
+            return JsonResponse({'code': 400,
+                                 'errmsg': '设置地址标题失败'})
 
         # 4.响应删除地址结果
-        return http.JsonResponse({'code': 0,
-                                  'errmsg': '设置地址标题成功'})
+        return JsonResponse({'code': 0,
+                             'errmsg': '设置地址标题成功'})
 
 
 class ChangePassword(LoginRequird, View):
@@ -549,22 +550,22 @@ class ChangePassword(LoginRequird, View):
 
         # 校验参数
         if not all([old_password, new_password, new_password2]):
-           return http.JsonResponse({'code':400,
+           return JsonResponse({'code':400,
                                      'errmsg':'缺少必传参数'})
 
 
         result = request.user.check_password(old_password)
 
         if not result:
-            return http.JsonResponse({'code':400,
+            return JsonResponse({'code':400,
                                       'errmsg':'原始密码不正确'})
 
         if not re.match(r'^[0-9A-Za-z]{8,20}$', new_password):
-            return http.JsonResponse({'code':400,
+            return JsonResponse({'code':400,
                                       'errmsg':'密码最少8位,最长20位'})
 
         if new_password != new_password2:
-            return http.JsonResponse({'code':400,
+            return JsonResponse({'code':400,
                                       'errmsg':'两次输入密码不一致'})
 
         # 修改密码
@@ -573,16 +574,70 @@ class ChangePassword(LoginRequird, View):
             request.user.save()
         except Exception as e:
             logger.error(e)
-            return http.JsonResponse({'code':400,
-                                      'errmsg':'修改密码失败'})
+            return JsonResponse({'code': 400,
+                                 'errmsg': '修改密码失败'})
 
         # 清理状态保持信息
         logout(request)
 
-        response = http.JsonResponse({'code':0,
-                                      'errmsg':'ok'})
+        response = JsonResponse({'code': 0,
+                                 'errmsg': 'ok'})
 
         response.delete_cookie('username')
 
         # # 响应密码修改结果：重定向到登录界面
         return response
+
+class UserBrowseHistory(View):
+    """用户浏览记录"""
+
+    def post(self, request):
+        """保存用户浏览记录"""
+        # 接收参数
+        json_dict = json.loads(request.body.decode())
+        sku_id = json_dict.get('sku_id')
+
+        # 校验参数:
+        try:
+            SKU.objects.get(id=sku_id)
+        except Exception as e:
+            return http.HttpResponseForbidden('sku不存在')
+
+        # 保存用户浏览数据
+        redis_conn = get_redis_connection('history')
+        pl = redis_conn.pipeline()
+        user_id = request.user.id
+
+        # 先去重: 这里给 0 代表去除所有的 sku_id
+        pl.lrem('history_%s' % user_id, 0, sku_id)
+        # 再存储
+        pl.lpush('history_%s' % user_id, sku_id)
+        # 最后截取: 界面有限, 只保留 5 个
+        pl.ltrim('history_%s' % user_id, 0, 4)
+        # 执行管道
+        pl.execute()
+
+        # 响应结果
+        return http.JsonResponse({'code': 0,
+                                  'errmsg': 'OK'})
+
+    def get(self, request):
+        """获取用户浏览记录"""
+        # 获取Redis存储的sku_id列表信息
+        redis_conn = get_redis_connection('history')
+        sku_ids = redis_conn.lrange('history_%s' % request.user.id, 0, -1)
+
+        # 根据sku_ids列表数据，查询出商品sku信息
+        skus = []
+        for sku_id in sku_ids:
+            sku = SKU.objects.get(id=sku_id)
+            skus.append({
+                'id': sku.id,
+                'name': sku.name,
+                'default_image_url': sku.default_image_url,
+                'price': sku.price
+            })
+
+        return http.JsonResponse({'code': 0,
+                                  'errmsg': 'OK',
+                                  'skus': skus})

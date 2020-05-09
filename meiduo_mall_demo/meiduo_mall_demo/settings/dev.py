@@ -55,7 +55,9 @@ INSTALLED_APPS = [
     # 定时任务
     'django_crontab',
     # 全文检索
-    'haystack'
+    'haystack',
+    # 添加购物车子应用:
+    'carts',
 ]
 
 MIDDLEWARE = [
@@ -163,6 +165,21 @@ CACHES = {
     "verify_code": {  # 验证码信息: 存到 2 号库
         "BACKEND": "django_redis.cache.RedisCache",
         "LOCATION": "redis://127.0.0.1:6379/2",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+    "history": { # 用户浏览记录
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/3",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+
+    "carts": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/5",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
