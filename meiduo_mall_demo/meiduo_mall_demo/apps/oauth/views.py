@@ -10,6 +10,7 @@ import logging
 from django.contrib.auth import login
 from django_redis import get_redis_connection
 
+from carts.utils import merge_cart_cookie_to_redis
 from oauth.models import OAuthQQuser
 from oauth.utils import generate_access_token, check_access_token
 from users.models import User
@@ -97,6 +98,7 @@ class QQUserlogreturn(View):
                                 user.username,
                                 max_age=3600 * 24 * 14)
 
+            response = merge_cart_cookie_to_redis(request, response)
             # 返回响应
             return response
 
@@ -185,5 +187,7 @@ class QQUserlogreturn(View):
                             user.username,
                             max_age=3600 * 24 * 14)
 
+        response = merge_cart_cookie_to_redis(request, response)
         # 返回响应
         return response
+

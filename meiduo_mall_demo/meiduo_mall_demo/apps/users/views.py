@@ -4,6 +4,8 @@ from django import http
 from django.views import View
 from django_redis import get_redis_connection
 import json
+
+from carts.utils import merge_cart_cookie_to_redis
 from celery_tasks.email.tasks import send_verify_email
 from goods.models import SKU
 from meiduo_mall_demo.utils.view import LoginRequird
@@ -13,7 +15,6 @@ from django.contrib.auth import login, authenticate, logout
 import logging
 
 logger = logging.getLogger('django')
-
 
 class UsernameCountView(View):
     '''判断用户名是否已经使用'''
@@ -109,8 +110,12 @@ class Regeist(View):
 
         # 状态保持
         login(request, user)
+
+        response = JsonResponse({'code': 0, 'errmsg': 'ok'})
+
+        response = merge_cart_cookie_to_redis(request, response)
         # 返回Json
-        return http.JsonResponse({'code': 0, 'errmsg': 'ok'})
+        return response
 
 
 class Login(View):
