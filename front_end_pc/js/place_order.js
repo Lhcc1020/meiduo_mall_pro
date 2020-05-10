@@ -46,21 +46,13 @@ var vm = new Vue({
             })
     },
     methods: {
-        // 退出登录按钮
-        logoutfunc: function () {
-            var url = this.host + '/logout/';
-            axios.delete(url, {
-                responseType: 'json',
-                withCredentials:true,
-            })
-                .then(response => {
-                    location.href = 'login.html';
-                })
-                .catch(error => {
-                    console.log(error.response);
-                })
+        // 退出
+        logoutfunc: function(){
+            sessionStorage.clear();
+            localStorage.clear();
+            location.href = '/login.html';
         },
-         // 提交订单
+        // 提交订单
         on_order_submit: function(){
                 var url = this.host+'/orders/commit/'
                 axios.post(url, {
@@ -71,14 +63,9 @@ var vm = new Vue({
                         responseType: 'json'
                     })
                     .then(response => {
-                        if (response.data.code == 0){
-                              location.href = '/order_success.html?order_id='+response.data.order_id
+                        location.href = '/order_success.html?order_id='+response.data.order_id
                             +'&amount='+this.payment_amount
                             +'&pay='+this.pay_method;
-                        } else if (response.data.code == 400){
-                            alert(response.data.errmsg)
-                        }
-
                     })
                     .catch(error => {
                         this.order_submitting = false;

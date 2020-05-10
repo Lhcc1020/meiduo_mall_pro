@@ -146,7 +146,7 @@ var vm = new Vue({
             }
         },
         // 获取购物车数据
-       get_cart(){
+         get_cart(){
         let url = this.host + '/carts/simple/';
         axios.get(url, {
             responseType: 'json',

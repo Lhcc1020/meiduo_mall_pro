@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'haystack',
     # 添加购物车子应用:
     'carts',
+    'orders',
 ]
 
 MIDDLEWARE = [

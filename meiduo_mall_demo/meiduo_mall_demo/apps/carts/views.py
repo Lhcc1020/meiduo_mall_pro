@@ -367,20 +367,20 @@ class CartsSimpleView(View):
             else:
                 cart_dict = {}
 
-            # 构造简单购物车 JSON 数据
-            # 构造简单购物车 JSON 数据
-            cart_skus = []
-            sku_ids = cart_dict.keys()
-            skus = SKU.objects.filter(id__in=sku_ids)
-            for sku in skus:
-                cart_skus.append({
-                    'id': sku.id,
-                    'name': sku.name,
-                    'count': cart_dict.get(sku.id).get('count'),
-                    'default_image_url': sku.default_image_url
-                })
+        # 构造简单购物车 JSON 数据
+        # 构造简单购物车 JSON 数据
+        cart_skus = []
+        sku_ids = cart_dict.keys()
+        skus = SKU.objects.filter(id__in=sku_ids)
+        for sku in skus:
+            cart_skus.append({
+                'id': sku.id,
+                'name': sku.name,
+                'count': cart_dict.get(sku.id).get('count'),
+                'default_image_url': sku.default_image_url
+            })
 
-            # 响应 json 列表数据
-            return JsonResponse({'code': 0,
-                                 'errmsg': 'OK',
-                                 'cart_skus': cart_skus})
+        # 响应 json 列表数据
+        return JsonResponse({'code': 0,
+                             'errmsg': 'OK',
+                             'cart_skus': cart_skus})

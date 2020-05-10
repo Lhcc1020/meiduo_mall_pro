@@ -3658,3 +3658,118 @@ INFO 2020-05-09 12:24:08,999 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro
 INFO 2020-05-09 12:24:09,871 autoreload 597 Watching for file changes with StatReloader
 INFO 2020-05-09 12:24:27,723 autoreload 217 /home/ubuntu/Desktop/meiduo_mall_pro/meiduo_mall_demo/meiduo_mall_demo/apps/carts/urls.py changed, reloading.
 INFO 2020-05-09 12:24:28,499 autoreload 597 Watching for file changes with StatReloader
+ERROR 2020-05-09 12:25:00,622 log 228 Internal Server Error: /carts/simple/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view carts.views.CartsSimpleView didn't return an HttpResponse object. It returned None instead.
+ERROR 2020-05-09 12:25:00,624 basehttp 154 "GET /carts/simple/ HTTP/1.1" 500 67212
+INFO 2020-05-09 12:25:09,339 autoreload 597 Watching for file changes with StatReloader
+ERROR 2020-05-09 12:25:14,435 log 228 Internal Server Error: /carts/simple/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view carts.views.CartsSimpleView didn't return an HttpResponse object. It returned None instead.
+ERROR 2020-05-09 12:25:14,438 basehttp 154 "GET /carts/simple/ HTTP/1.1" 500 67212
+ERROR 2020-05-09 12:25:16,861 log 228 Internal Server Error: /carts/simple/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view carts.views.CartsSimpleView didn't return an HttpResponse object. It returned None instead.
+ERROR 2020-05-09 12:25:16,865 basehttp 154 "GET /carts/simple/ HTTP/1.1" 500 67212
+INFO 2020-05-09 12:25:24,826 basehttp 154 "GET /carts/ HTTP/1.1" 200 1045
+ERROR 2020-05-09 12:25:30,983 log 228 Internal Server Error: /carts/simple/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view carts.views.CartsSimpleView didn't return an HttpResponse object. It returned None instead.
+ERROR 2020-05-09 12:25:30,984 basehttp 154 "GET /carts/simple/ HTTP/1.1" 500 67212
+INFO 2020-05-09 12:25:59,101 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2020-05-09 12:26:02,736 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-09 12:26:02,867 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+ERROR 2020-05-09 12:26:03,211 log 228 Internal Server Error: /carts/simple/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view carts.views.CartsSimpleView didn't return an HttpResponse object. It returned None instead.
+ERROR 2020-05-09 12:26:03,215 basehttp 154 "GET /carts/simple/ HTTP/1.1" 500 67212
+INFO 2020-05-09 12:27:33,741 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 12:27:37,554 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:27:38,495 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:27:52,807 basehttp 154 "GET /carts/ HTTP/1.1" 200 1045
+INFO 2020-05-09 12:27:56,947 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:28:01,892 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:28:03,220 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:28:20,615 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:28:21,456 basehttp 154 "OPTIONS /logout/ HTTP/1.1" 200 0
+INFO 2020-05-09 12:28:21,465 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 27
+INFO 2020-05-09 12:28:22,842 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-09 12:28:22,929 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+INFO 2020-05-09 12:28:23,152 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:29:04,235 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2020-05-09 12:29:29,722 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2020-05-09 12:29:40,582 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-09 12:29:40,699 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+INFO 2020-05-09 12:29:41,011 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:29:46,785 basehttp 154 "GET /carts/ HTTP/1.1" 200 1045
+INFO 2020-05-09 12:29:49,693 basehttp 154 "GET /carts/ HTTP/1.1" 200 1045
+INFO 2020-05-09 12:29:50,869 basehttp 154 "GET /carts/ HTTP/1.1" 200 1045
+INFO 2020-05-09 12:29:53,937 basehttp 154 "GET /info/ HTTP/1.1" 200 145
+INFO 2020-05-09 12:29:54,003 basehttp 154 "GET /browse_histories/ HTTP/1.1" 200 1450
+INFO 2020-05-09 12:29:56,756 basehttp 154 "GET /addresses/ HTTP/1.1" 200 333
+INFO 2020-05-09 12:29:56,758 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2020-05-09 12:30:01,902 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:42:27,809 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 12:42:34,078 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:42:36,826 basehttp 154 "OPTIONS /logout/ HTTP/1.1" 200 0
+INFO 2020-05-09 12:42:36,847 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 27
+INFO 2020-05-09 12:42:38,401 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-09 12:42:38,557 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+INFO 2020-05-09 12:42:38,873 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:42:40,943 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:42:44,900 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:42:46,996 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:42:48,376 basehttp 154 "GET /carts/ HTTP/1.1" 200 1045
+INFO 2020-05-09 12:42:51,244 basehttp 154 "GET /carts/ HTTP/1.1" 200 1045
+INFO 2020-05-09 12:42:51,879 basehttp 154 "GET /info/ HTTP/1.1" 200 145
+INFO 2020-05-09 12:42:51,955 basehttp 154 "GET /browse_histories/ HTTP/1.1" 200 1450
+INFO 2020-05-09 12:42:52,990 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:42:55,048 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:43:01,164 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:43:03,750 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:45:14,068 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 12:45:19,141 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:45:20,026 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:45:20,984 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 27
+INFO 2020-05-09 12:45:22,377 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+INFO 2020-05-09 12:45:22,671 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:45:30,518 basehttp 154 "GET /carts/ HTTP/1.1" 200 1045
+INFO 2020-05-09 12:45:33,140 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:46:37,334 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 12:46:41,908 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:48:12,786 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2020-05-09 12:49:45,585 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 12:49:50,118 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2020-05-09 12:49:51,542 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2020-05-09 12:49:52,240 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2020-05-09 12:49:55,271 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-09 12:49:55,386 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+INFO 2020-05-09 12:49:55,584 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:49:56,477 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:49:59,787 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:50:01,848 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:50:03,128 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:50:04,522 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:50:05,288 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:50:06,035 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865
+INFO 2020-05-09 12:50:08,825 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 865

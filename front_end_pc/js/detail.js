@@ -108,7 +108,7 @@ var vm = new Vue({
                     console.log(error);
                 })
         },
-       get_cart(){
+         get_cart(){
         let url = this.host + '/carts/simple/';
         axios.get(url, {
             responseType: 'json',
