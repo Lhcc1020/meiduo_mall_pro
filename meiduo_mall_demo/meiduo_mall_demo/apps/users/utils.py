@@ -21,11 +21,21 @@ def checkusername(account):
 class UsernameCheck(ModelBackend):
     """自定义用户认证后端,继承ModelBackend"""
     def authenticate(self, request, username=None, password=None, **kwargs):
-        # 重写继承的认证方法
-        user = checkusername(username)
 
-        # 确认判断结果,并校验密码
-        if user and user.check_password(password):
-            return user
+        # 判断是否通过vue组件发送请求
+        if request is None:
+            try:
+                user = User.objects.get(username=username, is_staff=True)
+            except:
+                return None
+            # 判断密码
+            if user.check_password(password):
+                return user
 
+        else:
+            # 自定义一个函数,用来区分username保存的类型: username/mobile
+            user = checkusername(username)
+
+            if user and user.check_password(password):
+                return user
 

@@ -1,7 +1,7 @@
 var vm = new Vue({
-    delimiters: ['[[', ']]'],
     el: '#app',
     data: {
+       delimiters: ['[[', ']]'],
         host,
         username: '',
         user_id: sessionStorage.user_id || localStorage.user_id,
@@ -20,13 +20,12 @@ var vm = new Vue({
         }
     },
     mounted: function(){
+        // 获取cookie中的用户名
+          this.username = getCookie('username');
+
         this.order_id = this.get_query_string('order_id');
         this.amount = this.get_query_string('amount');
         this.pay_method = this.get_query_string('pay');
-
-          // 获取cookie中的用户名
-    	this.username = getCookie('username');
-
     },
     methods: {
         // 退出登录按钮
@@ -37,14 +36,10 @@ var vm = new Vue({
                 withCredentials:true,
             })
                 .then(response => {
-                    if (response.data.code == 1) {
-                        location.href = 'login.html';
-                    } else {
-                        alert(response.data.errmsg)
-                    }
+                    location.href = 'login.html';
                 })
                 .catch(error => {
-                    console.log(error);
+                    console.log(error.response);
                 })
         },
         // 获取url路径参数
@@ -56,7 +51,7 @@ var vm = new Vue({
             }
             return null;
         },
-         next_operate: function(){
+        next_operate: function(){
             if (this.pay_method == 1) {
                 location.href = '/index.html';
             } else {
@@ -67,12 +62,12 @@ var vm = new Vue({
                         responseType: 'json'
                     })
                     .then(response => {
-                        // 跳转到支付宝支付
-                         if (response.data.code == 1) {
-                            location.href = response.data.alipay_url;
-                        } else {
-                            alert(response.data.errmsg)
-                        }
+                       if (response.data.code == 0){
+                           // 跳转到支付宝支付
+                           location.href = response.data.alipay_url;
+                       } else if (response.data.code == 400) {
+                           alert(response.data.errmsg)
+                       }
                     })
                     .catch(error => {
                         console.log(error);

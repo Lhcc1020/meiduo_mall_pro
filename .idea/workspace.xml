@@ -2,15 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f398d60-82be-46e9-aaac-2fe6047e363f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/orders/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/serializers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/serializers/home.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/serializers/image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/serializers/users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/views/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/views/home.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/views/image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/views/users.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end_pc/js/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_end_pc/js/detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end_pc/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_end_pc/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end_pc/js/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_end_pc/js/list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end_pc/js/place_order.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_end_pc/js/place_order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end_pc/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end_pc/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/carts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/carts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end_pc/js/order_success.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_end_pc/js/order_success.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end_pc/order_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end_pc/order_success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/users/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/users/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/logs/meiduo.log" beforeDir="false" afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/logs/meiduo.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/settings/dev.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/urls.py" afterDir="false" />
@@ -37,111 +48,115 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="meiduo_mall: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front_end_pc/js/detail.js">
+        <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/users/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="129" column="6" selection-start-line="129" selection-start-column="6" selection-end-line="129" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/orders/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/users/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="252">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-              <folding>
-                <element signature="e#640#672#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/settings/dev.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
-              <folding>
-                <element signature="e#317#326#0" expanded="true" />
+                <element signature="e#0#53#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/orders/views.py">
+        <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="145" column="55" selection-start-line="145" selection-start-column="55" selection-end-line="145" selection-end-column="55" />
+            <state relative-caret-position="66">
+              <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
               <folding>
-                <element signature="e#0#57#0" expanded="true" />
+                <element signature="e#0#53#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front_end_pc/register.html">
+        <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/views/home.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#338#382#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/views/users.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-233">
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/serializers/image.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-198">
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/serializers/home.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front_end_pc/place_order.html">
+        <entry file="file://$USER_HOME$/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/rest_framework/mixins.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="121" column="7" selection-start-line="121" selection-start-column="7" selection-end-line="121" selection-end-column="7" />
-              <folding>
-                <element signature="e#1544#1550#0" expanded="true" />
-                <element signature="e#1550#1556#0" expanded="true" />
-                <element signature="e#1556#1562#0" expanded="true" />
-                <element signature="e#1562#1568#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="308">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front_end_pc/js/place_order.js">
+        <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/serializers/users.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
+            <state relative-caret-position="638">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/orders/models.py">
+        <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/goods/search_indexes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+            <state relative-caret-position="242">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -159,16 +174,17 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>rest</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/meiduo_mall_demo/celery_tasks/__init__.py" />
-        <option value="$PROJECT_DIR$/meiduo_mall_demo/celery_tasks/config.py" />
-        <option value="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/libs/yuntongxun/sms.py" />
-        <option value="$PROJECT_DIR$/meiduo_mall_demo/celery_tasks/sms/tasks.py" />
         <option value="$PROJECT_DIR$/meiduo_mall_demo/celery_tasks/yuntongxun/sms.py" />
         <option value="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/verifications/views.py" />
         <option value="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/utils/view.py" />
@@ -177,7 +193,6 @@
         <option value="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/oauth/urls.py" />
         <option value="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/oauth/utils.py" />
         <option value="$PROJECT_DIR$/meiduo_mall_demo/celery_tasks/email/tasks.py" />
-        <option value="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/users/utils.py" />
         <option value="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/areas/models.py" />
         <option value="$PROJECT_DIR$/meiduo_mall_demo/scripts/import_data.sh" />
         <option value="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/areas/urls.py" />
@@ -208,14 +223,19 @@
         <option value="$PROJECT_DIR$/front_end_pc/index.html" />
         <option value="$PROJECT_DIR$/front_end_pc/list.html" />
         <option value="$PROJECT_DIR$/front_end_pc/detail.html" />
-        <option value="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/orders/urls.py" />
         <option value="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/users/urls.py" />
-        <option value="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/urls.py" />
-        <option value="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/settings/dev.py" />
         <option value="$PROJECT_DIR$/front_end_pc/place_order.html" />
         <option value="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/orders/models.py" />
         <option value="$PROJECT_DIR$/front_end_pc/js/place_order.js" />
         <option value="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/orders/views.py" />
+        <option value="$PROJECT_DIR$/front_end_pc/order_success.html" />
+        <option value="$PROJECT_DIR$/front_end_pc/js/order_success.js" />
+        <option value="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/orders/urls.py" />
+        <option value="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/payment/views.py" />
+        <option value="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/urls.py" />
+        <option value="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/users/utils.py" />
+        <option value="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/settings/dev.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
       </list>
     </option>
   </component>
@@ -233,6 +253,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,17 +264,6 @@
             <path>
               <item name="meiduo_mall_pro" type="b2602c69:ProjectViewProjectNode" />
               <item name="meiduo_mall_pro" type="462c0819:PsiDirectoryNode" />
-              <item name="front_end_pc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="meiduo_mall_pro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meiduo_mall_pro" type="462c0819:PsiDirectoryNode" />
-              <item name="front_end_pc" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="meiduo_mall_pro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meiduo_mall_pro" type="462c0819:PsiDirectoryNode" />
               <item name="meiduo_mall_demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -275,13 +285,43 @@
               <item name="meiduo_mall_demo" type="462c0819:PsiDirectoryNode" />
               <item name="meiduo_mall_demo" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="orders" type="462c0819:PsiDirectoryNode" />
+              <item name="meiduo_admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiduo_mall_pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiduo_mall_pro" type="462c0819:PsiDirectoryNode" />
+              <item name="meiduo_mall_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="meiduo_mall_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="meiduo_admin" type="462c0819:PsiDirectoryNode" />
+              <item name="serializers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiduo_mall_pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiduo_mall_pro" type="462c0819:PsiDirectoryNode" />
+              <item name="meiduo_mall_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="meiduo_mall_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiduo_mall_pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiduo_mall_pro" type="462c0819:PsiDirectoryNode" />
+              <item name="meiduo_mall_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="meiduo_mall_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="settings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiduo_mall_pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiduo_mall_pro" type="462c0819:PsiDirectoryNode" />
+              <item name="meiduo_mall_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="meiduo_mall_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,7 +329,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/orders" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -437,7 +477,10 @@
       <workItem from="1587823768048" duration="18762000" />
       <workItem from="1588046287711" duration="15254000" />
       <workItem from="1588594798361" duration="587000" />
-      <workItem from="1589110084227" duration="2363000" />
+      <workItem from="1589110084227" duration="5551000" />
+      <workItem from="1589199445764" duration="735000" />
+      <workItem from="1589297397807" duration="308000" />
+      <workItem from="1590368981365" duration="5118000" />
     </task>
     <task id="LOCAL-00001" summary="验证码包">
       <created>1587456387473</created>
@@ -450,7 +493,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103145000" />
+    <option name="totallyTimeSpent" value="112494000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -462,31 +505,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1851" height="875" extended-state="6" />
-    <editor active="true" />
+    <frame x="67" y="25" width="1847" height="871" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17065036" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17715877" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.34199727" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.38987687" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49972144" weight="0.38376892" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32968536" />
-      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32968536" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.3287483" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32968536" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32968536" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.23119015" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.23108666" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50027853" side_tool="true" weight="0.389271" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32968536" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32962757" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32924792" />
       <window_info anchor="right" id="Word Book" order="5" side_tool="true" weight="0.32962757" />
       <window_info anchor="right" id="Translation Assistant" order="6" weight="0.32962757" />
     </layout>
@@ -498,175 +540,44 @@
     <MESSAGE value="验证码包" />
     <option name="LAST_COMMIT_MESSAGE" value="验证码包" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/rest_framework_jwt/views.py</url>
+          <line>73</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/users/utils.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/users/utils.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/views/users.py</url>
+          <line>96</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/views/users.py</url>
+          <line>78</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/meiduo_mall_pro$regenerate_detail_html.coverage" NAME="regenerate_detail_html Coverage Results" MODIFIED="1589024815426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meiduo_mall_demo/scripts" />
     <SUITE FILE_PATH="coverage/meiduo_mall_pro$manage.coverage" NAME="manage Coverage Results" MODIFIED="1587369704711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meiduo_mall" />
-    <SUITE FILE_PATH="coverage/meiduo_mall_pro$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1589028584242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meiduo_mall_demo" />
+    <SUITE FILE_PATH="coverage/meiduo_mall_pro$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1590371978011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meiduo_mall_demo" />
     <SUITE FILE_PATH="coverage/meiduo_mall_pro$sms.coverage" NAME="sms Coverage Results" MODIFIED="1587476246812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/libs/yuntongxun" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/itsdangerous/jws.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="185" selection-start-line="185" selection-end-line="185" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/areas/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/areas/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/users/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#84#93#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/areas/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/utils/view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/contents/models.py" />
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/contents/urls.py" />
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/utils/fastdfs/client.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/goods/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/contents/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/utils/fastdfs/fastdfs_storage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/scripts/goods_data.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/contents/generate_index.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1870">
-          <caret line="102" column="32" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/contents/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/goods/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="309" column="7" selection-start-line="309" selection-start-column="7" selection-end-line="309" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/goods/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1298">
-          <caret line="143" column="15" selection-start-line="143" selection-start-column="15" selection-end-line="143" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/celery_tasks/html/tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/celery_tasks/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="17" column="73" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/templates/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/scripts/regenerate_detail_html.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/debug.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1166">
@@ -716,16 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="70" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/users/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-250">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -819,13 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/orders/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/users/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
@@ -836,65 +730,245 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-          <folding>
-            <element signature="e#640#672#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/settings/dev.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
-          <folding>
-            <element signature="e#317#326#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front_end_pc/register.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/front_end_pc/place_order.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
+        <state relative-caret-position="2662">
           <caret line="121" column="7" selection-start-line="121" selection-start-column="7" selection-end-line="121" selection-end-column="7" />
-          <folding>
-            <element signature="e#1544#1550#0" expanded="true" />
-            <element signature="e#1550#1556#0" expanded="true" />
-            <element signature="e#1556#1562#0" expanded="true" />
-            <element signature="e#1562#1568#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front_end_pc/js/place_order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1606">
+          <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/orders/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        <state relative-caret-position="638">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front_end_pc/js/place_order.js">
+    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/orders/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
+        <state relative-caret-position="4270">
+          <caret line="212" column="31" selection-start-line="212" selection-start-column="31" selection-end-line="212" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/orders/views.py">
+    <entry file="file://$PROJECT_DIR$/front_end_pc/order_success.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="145" column="55" selection-start-line="145" selection-start-column="55" selection-end-line="145" selection-end-column="55" />
+        <state relative-caret-position="618">
+          <caret line="71" column="7" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
           <folding>
-            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#1542#1548#0" expanded="true" />
+            <element signature="e#1548#1554#0" expanded="true" />
+            <element signature="e#1554#1560#0" expanded="true" />
+            <element signature="e#1560#1566#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front_end_pc/js/order_success.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="77" column="3" selection-start-line="53" selection-start-column="8" selection-end-line="77" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/orders/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="7" column="74" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/payment/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/verifications/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-132">
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+          <folding>
+            <element signature="e#640#672#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/rest_framework_jwt/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1182">
+          <caret line="73" column="6" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/settings/dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3419">
+          <caret line="71" column="62" selection-start-line="71" selection-start-column="62" selection-end-line="71" selection-end-column="62" />
+          <folding>
+            <element signature="e#317#326#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/db/models/options.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="344" selection-start-line="344" selection-end-line="344" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ea076a5a-3960-457f-ad86-9ec750508036/schema/meiduo_mall/table/tb_users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="800d16b0-e81b-44f7-8c84-537e120683b1">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/contrib/auth/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/db/models/manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/contrib/auth/base_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/users/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#338#382#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/rest_framework/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="103" column="6" selection-start-line="103" selection-start-column="6" selection-end-line="103" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/rest_framework/mixins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/goods/search_indexes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/views/home.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/views/users.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-233">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/serializers/image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/serializers/home.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/serializers/users.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiduo_mall_demo/meiduo_mall_demo/apps/meiduo_admin/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
